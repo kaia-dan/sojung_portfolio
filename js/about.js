@@ -1,4 +1,4 @@
- //스크립트 위로 튕기는것 (a태그 눌렀을때 위로 튕기는거 막아줌)
+ //스크립트 위로 튕기는것 (a태그 눌렀을때 위로 튕기는거 막아줌)f
 $(document).on('click', 'a[href="#"]', function(e){
   e.preventDefault();
 });
