@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Serif+KR:wght@200;300;400;500;600&display=swap');
+
+/* 기본설정 */
+html {
+  font-size: 62.5%;
+}
+/* 폰트 */
+body{
+  font-family: 'SUIT', sans-serif;
+  font-size: 1.6rem;
+  color: #00130F;
+  background: #f7f7f7;
+}
+.en{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* layout */
+section{
+  width: 100%; height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.left_box{
+  width: 50%;
+  position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  padding-left: 100px; box-sizing: border-box;
+  /* background: red; */
+}
+.left_box .title{
+  font-size: 4rem; margin-bottom: 8px;
+}
+.left_box .date{
+  font-size: 2rem; margin-bottom: 80px;
+}
+.left_box .text span{
+  line-height: 1.4;
+  background: #ff491c3b; font-weight: 600;
+}
+.right_box{
+  width: 50%;
+  position: absolute; left: 50%;
+  display: flex;
+}
+.right_box div{
+  width: 42%; margin-right: 30px;
+}
+.right_box div p{
+  width: 100%;
+  position: relative;
+}
+.right_box div p img{
+  width: 100%;
+  transition: all 0.3s;
+}
+.right_box div p img:nth-child(2){
+  width: 100%;
+  position: absolute; left: 0; top: 0;
+}
+.right_box .left p{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.right_box .right p{
+  margin-top: 30px;
+}
+.right_box div p:hover img:nth-child(2){
+  opacity: 0;
+}
