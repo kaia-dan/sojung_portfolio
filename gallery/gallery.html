@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script defer src="../js/script.js"></script>
+  <script defer src="../js/gallery.js"></script>
+  <script src="../js/slick.min.js"></script>
+  <script src="../js/scrolla.jquery.min.js"></script>
+  <!-- style.css -->
+  <link rel="stylesheet" href="../style/gallery.css">
+  <!-- reset.css -->
+  <link rel="stylesheet" href="../style/reset.css">
+  <link rel="stylesheet" href="../style/slick.css">
+  <!-- SUIT Fonts -->
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/animate.min.css">
+  <!-- 타이틀아이콘변경 -->
+  <link rel="shortcut icon" type="image⁄x-icon" href="../img/logo_green.png">
+
+  <title>소정의 Gallery입니다 :</title>
+</head>
+<body>
+  <!-- 마우스커서 -->
+  <div id="cursor">
+    <div class="cursor__inner"></div>
+    <div class="over__line"></div>
+  </div>
+  <div class="allWrap">
+    <!-- 헤더영역시작 -->
+    <header class="header_wrap">
+      <div class="header_inner">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../img/logo_green.svg" alt="로고이미지">
+            <img class="basic" src="../img/logo_basic.svg" alt="로고이미지">
+            <img src="../img/logo_green.svg" alt="로고이미지">
+          </a>
+          <p class="head_info en"></p>
+        </h1>
+        <nav class="hamberger_open">
+          <p class="menu_category en">GALLERY</p>
+          <a href="#">
+            <img src="../img/menu_hamberger_open_green.svg" alt="오픈햄버거메뉴아이콘">
+            <img class="basic" src="../img/menu_hamberger_open_basic.svg" alt="오픈햄버거메뉴아이콘">
+          </a>
+          <div class="close" href="#">
+            <img src="../img/menu_in_hamberger_close.svg" alt="">
+          </div>
+          <div class="sub_menuWrap">
+            <div class="sub_left">
+              <p><a href="mailto:aaaa3663@naver.com">aaaa3663@naver.com</a></p>
+              <p>82+)10 - 5369 - 4982</p>
+              <div class="sns">
+                <p cursor-class="overlay">
+                  <a href="https://open.kakao.com/o/sceJdUXd" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_kakao.svg" alt="카카오톡아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="https://github.com/kaia-dan" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_github.svg" alt="깃허브아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="https://www.instagram.com/_ho__ji" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_instagram.svg" alt="인스타그램아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="https://kaia-dan.tistory.com/" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_tistory.svg" alt="티스토리아이콘"></a>
+                </p>
+              </div>
+            </div>
+            <ul class="sub_menu">
+              <li class="en">
+                <a href="../index.html"><span></span> Index</a>
+              </li>
+              <li class="en">
+                <a href="../about/about.html"><span></span> About</a>
+              </li>
+              <li class="en">
+                <a href="../process/process.html"><span></span> Portfolio process</a>
+              </li>
+              <li class="en on">
+                <a href="gallery.html"><span></span> Gallery & Work</a>
+              </li>
+              <li class="en">
+                <a href="#contact"><span></span> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤더영역끝 -->
+
+    <!-- 서브페이지타이틀 -->
+    <p class="main_title animate" data-animate="motion"><span class="circle"></span>Gallery</p>
+
+    <!-- NCS영역시작 -->
+    <section class="contents_ncs">
+      <h2 class="title en_t animate" data-animate="motion">NCS PROCESS</h2>
+      <p class="tit animate" data-animate="motion">NCS과정평가 기록들 이에요.</p>
+      <ul class="ncs_slide">
+        <li cursor-class="overlay">
+          <a href="../pdf/김소정_UI구현_221128.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_1.PNG" alt="ui구현평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="../pdf/김소정_UI테스트_2221128.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_2.PNG" alt="ui테스트평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="../pdf/김소정_개발자환경구축_221212.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_3.PNG" alt="개발자환경구축평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="../pdf/김소정_프로그래밍언어활용_221212.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_4.PNG" alt="프로그래밍언어활용평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="#" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_5.PNG" alt="uiux요구분석평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="#" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_6.PNG" alt="uiux콘셉트기획평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="#" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_7.PNG" alt="ui아키텍쳐설계평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="#" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_8.PNG" alt="애플리케이션테스트수행평가"></a>
+        </li>
+        <li cursor-class="overlay">
+          <a href="#" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ncs_9.PNG" alt="애플리케이션배포평가"></a>
+        </li>
+      </ul>
+    </section>
+    <!-- NCS영역끝 -->
+    <!-- 아트워크영역시작 -->
+    <section class="contents_artwork">
+      <div class="title_wrap">
+        <h2 class="title en_t animate" data-animate="motion">ART WORK</h2>
+        <p class="tit animate" data-animate="motion">미술과 디자인툴도 잘 다룰 수 있어요</p>
+      </div>
+      <ul class="art_title en_t">
+        <li class="on animate" data-animate="motion" cursor-class="overlay">ART</li>
+        <li class="animate" data-animate="motion" cursor-class="overlay">DRAWING</li>
+        <li class="animate" data-animate="motion" cursor-class="overlay">ILLUSTRATOR</li>
+      </ul>
+      <ul class="art_img">
+        <li class="on" cursor-class="overlay">
+          <img id="artImage" src="../img/art_01.jpg" alt="셔터전시">
+        </li>
+        <li cursor-class="overlay">
+          <img id="drawImage" src="../img/activity_1_4.png" alt="셔터전시">
+        </li>
+        <li cursor-class="overlay">
+          <img id="illImage" src="../img/ill_01.png" alt="셔터전시">
+        </li>
+      </ul>
+    </section>
+    <!-- 아트워크영역끝 -->
+
+    <!-- 코딩리스트시작 -->
+    <section class="contents_codelist">
+      <h2 class="title en_t animate" data-animate="motion">CODING LIST</h2>
+      <p class="tit animate" data-animate="motion">리뉴얼, 브랜딩, 협업, 클론코딩까지 다양하게 준비했어요.</p>
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">01</p>
+            <p class="category en">UI/UX Renewal Web site</p>
+            <p class="name">Code plus</p>
+            <span class="hashtag">#반응형 #웹접근성 고려 #첫 리뉴얼사이트 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/codeplus/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/codeplus/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/codeplus/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_codeplus.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/codeplus" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay" cursor-class="overlay">
+            <img src="../img/mok_codeplus.png" alt="코드플러스목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_magazineB.png" alt="magazineB목업">
+          </li>
+          <li>
+            <p class="num en">02</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Magazin B</p>
+            <span class="hashtag">#반응형 #웹접근성 고려 #슬릭 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/magazineB/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/magazineB/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/magazineB/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_magazineb.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/magazineB" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">03</p>
+            <p class="category en">UI/UX Team project Web site</p>
+            <p class="name">h1 company</p>
+            <span class="hashtag">#팀프로젝트 #웹접근성 고려 #제안과 기획 & 디자인담당</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/h1company/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1920 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기" style="opacity: 0.6;"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기" style="opacity: 0.6;"></a>
+              </div>
+              <div class="show">
+                <a href="guide_h1company.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/h1company" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_h1company.png" alt="h1company목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_musign.png" alt="musign목업">
+          </li>
+          <li>
+            <p class="num en">04</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Musign</p>
+            <span class="hashtag">#반응형 #SVG애니메이션 #웹접근성 고려 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/musign/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/musign/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/musign/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_musign.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/musign" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">05</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Daebang</p>
+            <span class="hashtag">#current게이지바 #스플리팅 #가상요소활용 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/daebang/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1920 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기" style="opacity: 0.6;"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기" style="opacity: 0.6;"></a>
+              </div>
+              <div class="show">
+                <a href="guide_daebang.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/daebang" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_daebang.png" alt="daebang목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_dopda.png" alt="dopda목업">
+          </li>
+          <li>
+            <p class="num en">06</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Dopda</p>
+            <span class="hashtag">#반응형 #웹접근성 고려 #가상요소활용 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/dopda/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/dopda/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/dopda/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_dopda.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/dopda" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">07</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Phomein</p>
+            <span class="hashtag">#풀페이지 #도트navigation #카운트업 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/phomein/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1920 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기" style="opacity: 0.6;"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기" style="opacity: 0.6;"></a>
+              </div>
+              <div class="show">
+                <a href="guide_phomein.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/phomein" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_phomein.png" alt="phomein목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_Ystudio.png" alt="Ystudio목업">
+          </li>
+          <li>
+            <p class="num en">08</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Y studio</p>
+            <span class="hashtag">#반응형 #웹접근성 고려 #스크롤라 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/Ystudio/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/Ystudio/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/Ystudio/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_ystudio.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/Ystudio" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">09</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Hanwha</p>
+            <span class="hashtag">#반응형 #레이아웃연습 #폰트어썸 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/hanwha/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/hanwha/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/hanwha/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_hanwha.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/hanwha" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_hanwha.png" alt="hanwha목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_studiotomboy.png" alt="studiotomboy목업">
+          </li>
+          <li>
+            <p class="num en">10</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Studio tomboy</p>
+            <span class="hashtag">#반응형 #풀페이지 #비디오 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/studiotomboy/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/studiotomboy/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/studiotomboy/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_studiotomboy.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/studiotomboy" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">11</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Memez</p>
+            <span class="hashtag">#css로 흐르는영역구현 #스크롤애니메이션 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/memez/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1920 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기" style="opacity: 0.6;"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기" style="opacity: 0.6;"></a>
+              </div>
+              <div class="show">
+                <a href="guide_memez.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/memez" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_memez.png" alt="memez목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_medicalO.png" alt="medicalO목업">
+          </li>
+          <li>
+            <p class="num en">12</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Medical O</p>
+            <span class="hashtag">#반응형 #레이아웃연습 #플러그인사용 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/medicalO/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/medicalO/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/medicalO/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_medicalo.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/medicalO" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list">
+        <ul class="animate" data-animate="motion">
+          <li>
+            <p class="num en">13</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Icheon</p>
+            <span class="hashtag">#레이아웃연습 #애니메이션연습 #웹폰트 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/icheon/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1920 height=1080'); return false;"><img src="../img/responsive_desktop_g.svg" alt="데스크탑해상도로보기"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_tablet_g.svg" alt="태블릿해상도로보기" style="opacity: 0.6;"></a>
+                <a href="#" cursor-class="overlay"><img src="../img/responsive_mobile_g.svg" alt="모바일해상도로보기" style="opacity: 0.6;"></a>
+              </div>
+              <div class="show">
+                <a href="guide_icheon.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/icheon" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_icheon.png" alt="icheon목업">
+          </li>
+        </ul>
+      </div>
+
+      <div class="code_list green">
+        <ul class="animate" data-animate="motion">
+          <li class="imgBox" cursor-class="overlay">
+            <img src="../img/mok_crewalamode.png" alt="crewalamode목업">
+          </li>
+          <li>
+            <p class="num en">14</p>
+            <p class="category en">UI/UX Clone coding Web site</p>
+            <p class="name">Crew a la mode</p>
+            <span class="hashtag">#반응형 #웹접근성 고려 #참여율100%</span>
+            <div class="click_info">
+              <div class="responsive_ico">
+                <a href="https://kaia-dan.github.io/crew_a_la_mode/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/responsive_desktop_w.svg" alt="데스크탑해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/crew_a_la_mode/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=768 height=1080'); return false;"><img src="../img/responsive_tablet_w.svg" alt="태블릿해상도로보기"></a>
+                <a href="https://kaia-dan.github.io/crew_a_la_mode/" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=480 height=1080'); return false;"><img src="../img/responsive_mobile_w.svg" alt="모바일해상도로보기"></a>
+              </div>
+              <div class="show">
+                <a href="guide_crewalamode.html" cursor-class="overlay" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><p>기획서보기</p></a>
+                <a href="https://github.com/kaia-dan/crew_a_la_mode" cursor-class="overlay" target="_blank"><p>코드보기</p></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 코딩리스트끝 -->
+    <!-- 감사인사영역시작 -->
+    <section class="thanks_sec">
+      <h2 class="thanks en_t animate" data-animate="motion">Thank you for reviewing<br>my portfolio!</h2>
+    </section>
+    <!-- 감사인사영역끝 -->
+
+    <!-- 컨택영역시작(푸터) -->
+    <footer id="contact" class="contact_wrap" cursor-class="footerCursor">
+      <div class="footer_top">
+        <h2 class="for">유능한 인재를 찾고 계신다면,</h2>
+        <div class="visual_my contact" cursor-class="overlay">
+          <span class="mySec">
+            <img src="../img/myprofile_min.png" alt="소정의프로필사진">
+          </span>
+          <p class="mySec">
+            <a href="../pdf/김소정_이력서.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">이력서 보러가기<img class="arr" src="../img/arrow_link.svg" alt="바로가기아이콘">
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer_bottomWrap">
+        <p class="email en_t">
+          <a href="mailto:aaaa3663@naver.com" cursor-class="overlay">aaaa3663@naver.com</a>
+        </p>
+        <div class="footer_bottom">
+          <ul class="sns">
+            <li cursor-class="overlay">
+              <a href="https://open.kakao.com/o/sceJdUXd" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_kakao.svg" alt="카카오톡아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="https://github.com/kaia-dan" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_github.svg" alt="깃허브아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="https://www.instagram.com/_ho__ji" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_instagram.svg" alt="인스타그램아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="https://kaia-dan.tistory.com/" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_tistory.svg" alt="티스토리아이콘"></a>
+            </li>
+          </ul>
+          <ul class="list en">
+            <li>82+) 10 - 5369 - 4982</li>
+            <li>COPYRIGHTⓒ2022.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- 컨택영역끝(푸터) -->
+
+  </div>
+</body>
+</html>
