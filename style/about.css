@@ -79,7 +79,6 @@ body{
 .overlay .cursor__inner {
   width: 4rem;
   height: 4rem;
-  /* border: 1px solid #F0FF3D; */
   background: #ff491c6b;
   position: relative;
   z-index: 9999;
