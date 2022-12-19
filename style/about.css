@@ -786,7 +786,7 @@ section.contents_activity{
   background:#f5f5f5; border-radius:15px;
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 
 }
 div.section{
