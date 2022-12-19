@@ -164,10 +164,12 @@ section.design{
 section.fullscreen{
   width: 100%; padding-bottom: 100px;
   position: absolute;
+  position: relative;
   background: #f7f7f7;
 }
 .fullscreen .inner .title{
-  margin: 150px 0 100px;
+  padding: 150px 0 100px;
+  box-sizing: border-box;
 }
 .fullscreen .inner .img_box{
   width: 100%;
@@ -180,6 +182,40 @@ section.fullscreen{
   width: 100%;
 }
 /* 풀스크린샷영역끝 */
+/* 다음버튼영역시작 */
+section.next_button{
+  width: 100%; height: 300px;
+  position: absolute;
+  display: flex;
+  font-size: 6vw; text-align: center;
+  line-height: 300px;
+  overflow: hidden;
+}
+.next_button .prev{
+  width: 50%;
+  background: #e7e7e7;
+}
+.next_button .prev a{
+  display: block;
+  transition: transform 0.5s;
+}
+.next_button .prev a:hover{
+  transform: translateX(-15px);
+}
+.next_button .next{
+  width: 50%;
+  background: #ffffff;
+}
+.next_button .next a{
+  width: 100%; height: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+.next_button .next a:hover{
+  transform: translateX(15px);
+}
+
+/* 다음버튼영역끝 */
 
 /* 반응형 */
 @media screen and (max-width: 1550px){
@@ -191,12 +227,13 @@ section.fullscreen{
 @media screen and (max-width: 1229px){
   .design .inner .list li{
     padding: 0 15px;
+    box-sizing: border-box;
   }
   .design .inner .contents_tit{
     padding: 100px 0;
   }
   .fullscreen .inner .title{
-    margin: 120px 60px;
+    padding: 120px 60px;
   }
 }
 /* 타블렛 1024px */
@@ -231,7 +268,8 @@ section.fullscreen{
     border-radius: 10px;
   }
   .fullscreen .inner .title{
-    margin: 95px 0 50px;
+    padding: 95px 0 50px;
+    box-sizing: border-box;
   }
   .fullscreen .inner .img_box div{
     border-radius: 10px;
@@ -244,5 +282,16 @@ section.fullscreen{
   }
   .fullscreen .inner .title{
     font-size: 12vw;
+  }
+  section.next_button{
+    height: 200px;
+    font-size: 7vw;
+    line-height: 200px;
+  }
+  .next_button .prev a:hover{
+    transform: none;
+  }
+  .next_button .next a:hover{
+    transform: none;
   }
 }
