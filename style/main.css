@@ -218,7 +218,7 @@ header.header_wrap{
   left: 0;
 }
 .hamberger_open .sub_menuWrap .sub_left{
-  width: 20%;
+  width: 25%;
   display: flex; flex-direction: column;
   justify-content: end;
 }
@@ -236,7 +236,7 @@ header.header_wrap{
   /* display: flex; justify-content: space-between; */
 }
 .hamberger_open .sub_menuWrap .sub_left > .sns > p{
-  width: 15%;
+  width: 12%;
   display: inline-block;
   position: relative;
   margin-top: 40px;
@@ -255,7 +255,7 @@ header.header_wrap{
   /* position: absolute; left: 50%; */
 }
 .hamberger_open .sub_menuWrap .sub_menu{
-  width: 80%;
+  width: 75%;
   display: flex; flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -1192,7 +1192,7 @@ footer.contact_wrap{
   display: flex;
 }
 .footer_bottom .sns{
-  width: 250px; 
+  width: 360px; 
   display: flex; justify-content: space-between;
   align-items: center;
 }
@@ -1311,7 +1311,7 @@ footer.contact_wrap{
     transform: translateY(-164px);
   }
   .footer_bottom .sns{
-    width: 230px;
+    width: 315px;
   }
   .footer_bottom .sns li{
     width: 40px;
@@ -1386,7 +1386,7 @@ footer.contact_wrap{
     transform: translateY(-147px);
   }
   .footer_bottom .sns{
-    width: 200px;
+    width: 280px;
   }
   .footer_bottom .sns li{
     width: 35px;
@@ -1416,7 +1416,7 @@ footer.contact_wrap{
   .header_inner .hamberger_open .menu_category{
     right: 70px;
   }
-  .header_inner .hamberger_open a{
+  .header_inner .hamberger_open > a{
     width: 45px; height: 20px;
     right: 10px;
   }
@@ -1593,7 +1593,7 @@ footer.contact_wrap{
     padding: 0 3%;
   }
   .footer_bottom .sns{
-    width: 180px;
+    width: 250px;
   }
   .footer_bottom .sns li{
     width: 30px;
@@ -1783,7 +1783,7 @@ footer.contact_wrap{
     font-size: 4vw;
   }
   .hamberger_open .sub_menuWrap .sub_left > .sns > p{
-    width: 9%;
+    width: 8%;
   }
   /* 비쥬얼영역 */
   .visual_wrap{
@@ -1953,7 +1953,7 @@ footer.contact_wrap{
     height: 90px;
   }
   .footer_bottom .sns{
-    width: 138px;
+    width: 200px;
   }
   .footer_bottom .list li{
     font-size: 1.3rem;
