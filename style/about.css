@@ -571,6 +571,7 @@ section.contents_timeline{
 }
 .contents_timeline .timeline_list li .cover .t_txt{
   font-size: 1.6rem; opacity: 0.8;
+  line-height: 1.4;
 }
 .contents_timeline .end{
   width: 100%;
