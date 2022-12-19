@@ -786,7 +786,7 @@ section.contents_activity{
   background:#f5f5f5; border-radius:15px;
   position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 div.section{
@@ -817,7 +817,7 @@ div.section .close_modal img{
   background: #ff491c3b; font-weight: 600;
 }
 .right_box{
-  width: 50%;
+  width: 50%; height: 100%;
   position: absolute; left: 50%;
   display: flex;
 }
@@ -831,12 +831,37 @@ div.section .close_modal img{
 .right_box div p img{
   width: 100%;
   transition: all 0.3s;
+  border-radius: 10px;
   filter: grayscale(100%);
+}
+.right_box .left{
+  height: 100%;
+  overflow: auto;
 }
 .right_box .left p{
   width: 100%;
   margin-bottom: 30px;
 }
+.right_box .right{
+  height: 100%;
+  overflow: auto;
+}
+/* 스크롤바 */
+.right_box .right::-webkit-scrollbar, .right_box .left::-webkit-scrollbar{
+  width: 12px;
+}
+.right_box .right::-webkit-scrollbar-thumb, .right_box .left::-webkit-scrollbar-thumb{
+  background-color: #b1b1b1;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 3px solid transparent;
+}
+.right_box .right::-webkit-scrollbar-track, .right_box .left::-webkit-scrollbar-track{
+  border-radius: 15px;
+  background: #d4d4d4;
+  box-shadow: inset 0px 0px 5px white;
+}
+
 .right_box .right p{
   margin-top: 30px;
 }
@@ -844,6 +869,7 @@ div.section .close_modal img{
   filter: grayscale(0%);
 }
 /* ========modal끝======= */
+
 
 
 /* 대외활동역역끝 */
