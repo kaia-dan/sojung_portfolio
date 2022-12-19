@@ -1,5 +1,4 @@
 // 헤더컬러변경 외부변수
-// var color_thanks = $("section.thanks_sec").offset().top;
 var color_contact = $("footer.contact_wrap").offset().top;
 
 $(window).resize(function(){ 
@@ -21,16 +20,15 @@ $(window).resize(function(){
     // 스크롤탑값 변수
     var scrollTop = $(document).scrollTop();
 
-    // if(scrollTop > color_thanks && scrollTop < color_contact){
-      // 헤더로고
-      $(".header_inner .logo a img").removeClass("on");
-      $(".header_inner .logo a img.basic").removeClass("on");
-      // 헤더햄버거
-      $(".header_inner .hamberger_open a img").removeClass("on");
-      $(".header_inner .hamberger_open a img.basic").removeClass("on");
-      // 헤더폰트컬러
-      $(".header_inner .hamberger_open .menu_category").removeClass("on");
-    // }
+    // 헤더로고
+    $(".header_inner .logo a img").removeClass("on");
+    $(".header_inner .logo a img.basic").removeClass("on");
+    // 헤더햄버거
+    $(".header_inner .hamberger_open a img").removeClass("on");
+    $(".header_inner .hamberger_open a img.basic").removeClass("on");
+    // 헤더폰트컬러
+    $(".header_inner .hamberger_open .menu_category").removeClass("on");
+
     if(scrollTop > color_contact){
       // 헤더로고
       $(".header_inner .logo a img").addClass("on");
@@ -41,6 +39,5 @@ $(window).resize(function(){
       // 헤더폰트컬러
       $(".header_inner .hamberger_open .menu_category").addClass("on");
     };
-
   });
 }).resize(); 

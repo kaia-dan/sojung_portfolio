@@ -148,6 +148,5 @@ $(window).resize(function(){
       // 헤더폰트컬러
       $(".header_inner .hamberger_open .menu_category").addClass("on");
     }
-
   });
 }).resize(); 

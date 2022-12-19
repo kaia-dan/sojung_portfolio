@@ -199,7 +199,6 @@ $(window).resize(function(){
 
     // NCS영역
     function ncs(){
-      // var ncsHeight = $(".ncs_list").outerHeight(true);
       // console.log(ncsHeight)
       if(scrollTop >= fixedNum_ncs){
         $("section.contents_ncs").addClass("on");
@@ -396,13 +395,6 @@ function illChangeImage(){
 };
 setInterval(illChangeImage, 1200);
 
-
-//   // 영역스크롤값구하기
-//   $(function(){
-//     const topNum_1 = $("section.contents_ncs").offset().top; //.orange top값을 반환하여 topNum_1에 대입
-//     console.log(topNum_1); //3876
-//   });
-
 // ncs영역슬릭
 $(document).ready(function(){
   $(".ncs_list").slick({
@@ -439,10 +431,6 @@ $(function() {
       }
     ]
   });
-
-  // $(window).on('resize', function() {
-  //     $('.record_list').slick('resize');
-  // });
 });
 
 

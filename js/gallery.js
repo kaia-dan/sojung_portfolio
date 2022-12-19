@@ -99,9 +99,7 @@ setInterval(illChangeImage, 1200);
 
 
 // 헤더컬러변경 외부변수
-// var color_thanks = $("section.thanks_sec").offset().top;
 var color_art = $("section.contents_artwork").offset().top;
-// var color_codelist = $("section.contents_codelist").offset().top;
 var color_codelist_w = $(".contents_codelist .code_list").offset().top;
 var color_codelist_g = $(".contents_codelist .code_list.green").offset().top;
 var color_contact = $("footer.contact_wrap").offset().top;
@@ -144,18 +142,5 @@ $(window).resize(function(){
       // 헤더폰트컬러
       $(".header_inner .hamberger_open .menu_category").removeClass("on");
     };
-
-
-    // if(scrollTop > color_contact){
-    //   // 헤더로고
-    //   $(".header_inner .logo a img").addClass("on");
-    //   $(".header_inner .logo a img.basic").addClass("on");
-    //   // 헤더햄버거
-    //   $(".header_inner .hamberger_open a img").addClass("on");
-    //   $(".header_inner .hamberger_open a img.basic").addClass("on");
-    //   // 헤더폰트컬러
-    //   $(".header_inner .hamberger_open .menu_category").addClass("on");
-    // };
-
   });
 }).resize(); 
