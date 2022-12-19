@@ -10,6 +10,26 @@ $(function(){
     $(".modal:eq(0)").fadeIn().css("position","fixed");
     $("body").fadeIn().css("overflow","hidden");
   });
+  $(".contents_activity .folder li:nth-child(2)").on('click', function(){
+    $(".modal:eq(1)").fadeIn().css("position","fixed");
+    $("body").fadeIn().css("overflow","hidden");
+  });
+  $(".contents_activity .folder li:nth-child(3)").on('click', function(){
+    $(".modal:eq(2)").fadeIn().css("position","fixed");
+    $("body").fadeIn().css("overflow","hidden");
+  });
+  $(".contents_activity .folder li:nth-child(4)").on('click', function(){
+    $(".modal:eq(3)").fadeIn().css("position","fixed");
+    $("body").fadeIn().css("overflow","hidden");
+  });
+  $(".contents_activity .folder li:nth-child(5)").on('click', function(){
+    $(".modal:eq(4)").fadeIn().css("position","fixed");
+    $("body").fadeIn().css("overflow","hidden");
+  });
+  $(".contents_activity .folder li:nth-child(6)").on('click', function(){
+    $(".modal:eq(5)").fadeIn().css("position","fixed");
+    $("body").fadeIn().css("overflow","hidden");
+  });
   
   $(".modal, .modal_content").on('click', function(){
     $(".modal").fadeOut();
