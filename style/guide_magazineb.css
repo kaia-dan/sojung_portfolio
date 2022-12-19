@@ -110,6 +110,9 @@ section.design{
   font-size: 1.8rem; margin-bottom: 24px;
   font-weight: 600;
 }
+.design .inner .list li .logo{
+  width: 100%;
+}
 .design .inner .list li .font{
   font-size: 4.3rem; margin-bottom: 12px;
 }
