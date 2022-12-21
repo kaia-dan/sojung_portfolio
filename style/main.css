@@ -1838,6 +1838,9 @@ footer.contact_wrap{
   .intro_box .intro_right .sc.second_sc:last-child{
     width: 100%;
   }
+  .intro_box .intro_right .sc.second_sc .info:nth-child(4){
+    display: block;
+  }
   /* 키워드영역 */
   section.contents_keyword{
     height: 100vh;
