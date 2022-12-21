@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/jquery-3.3.1.min.js"></script>
+  <script defer src="../js/script.js"></script>
+  <script defer src="../js/about.js"></script>
+  <script src="../js/scrolla.jquery.min.js"></script>
+
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="../style/about.css">
+  <!-- reset.css -->
+  <link rel="stylesheet" href="../style/reset.css">
+  <!-- SUIT Fonts -->
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/animate.min.css">
+  <!-- 타이틀아이콘변경 -->
+  <link rel="shortcut icon" type="image⁄x-icon" href="../img/logo_orange.png">
+  <title>소정의 About입니다 :)</title>
+</head>
+<body>
+  <!-- 마우스커서 -->
+  <div id="cursor">
+    <div class="cursor__inner"></div>
+    <div class="over__line"></div>
+  </div>
+  <div class="allWrap">
+    <!-- 헤더영역시작 -->
+    <header class="header_wrap">
+      <div class="header_inner">
+        <h1 class="logo">
+          <a href="../index.html">
+            <img src="../img/logo_orange.svg" alt="로고이미지">
+            <img class="basic" src="../img/logo_basic.svg" alt="로고이미지">
+            <img src="../img/logo_orange.svg" alt="로고이미지">
+          </a>
+          <p class="head_info en"></p>
+        </h1>
+        <nav class="hamberger_open">
+          <p class="menu_category en">ABOUT</p>
+          <a href="#">
+            <img src="../img/menu_hamberger_open_orange.svg" alt="오픈햄버거메뉴아이콘">
+            <img class="basic" src="../img/menu_hamberger_open_basic.svg" alt="오픈햄버거메뉴아이콘">
+          </a>
+          <div class="close" href="#">
+            <img src="../img/menu_in_hamberger_close.svg" alt="">
+          </div>
+          <div class="sub_menuWrap">
+            <div class="sub_left">
+              <p><a href="mailto:aaaa3663@naver.com">aaaa3663@naver.com</a></p>
+              <p>82+)10 - 5369 - 4982</p>
+              <div class="sns">
+                <p cursor-class="overlay">
+                  <a href="https://open.kakao.com/o/sceJdUXd" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_kakao.svg" alt="카카오톡아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="https://github.com/kaia-dan" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_github.svg" alt="깃허브아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="https://www.instagram.com/_ho__ji" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_instagram.svg" alt="인스타그램아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="https://kaia-dan.tistory.com/" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_tistory.svg" alt="티스토리아이콘"></a>
+                </p>
+                <p cursor-class="overlay">
+                  <a href="../pdf/김소정_이력서.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ico_resume.png" alt="이력서아이콘"></a>
+                </p>
+              </div>
+            </div>
+            <ul class="sub_menu">
+              <li class="en">
+                <a href="../index.html"><span></span> Index</a>
+              </li>
+              <li class="en on">
+                <a href="about.html"><span></span> About</a>
+              </li>
+              <li class="en">
+                <a href="../process/process.html"><span></span> Portfolio process</a>
+              </li>
+              <li class="en">
+                <a href="../gallery/gallery.html"><span></span> Gallery & Work</a>
+              </li>
+              <li class="en">
+                <a href="#contact"><span></span> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- 헤더영역끝 -->
+
+    <!-- 서브페이지타이틀 -->
+    <p class="main_title en animate" data-animate="motion"><span class="circle"></span>About</p>
+    
+    <!-- 나를소개하는영역시작 -->
+    <section class="contents_introduce">
+      <h2 class="hidden">나를 소개하는 영역</h2>
+      <div class="intro_box">
+        <div class="intro_img animate" data-animate="motion" cursor-class="overlay">
+          <div class="img_in">
+            <img src="../img/myprofile.png" alt="소정의프로필사진">
+          </div>
+          <ul class="keyword">
+            <li><span># 성실</span></li>
+            <li><span># 긍정</span></li>
+            <li><span># 센스</span></li>
+            <li><span># 미소</span></li>
+            <li><span># 밝은성격</span></li>
+            <li><span># 책임감</span></li>
+            <li><span># 열정</span></li>
+            <li><span># 노력</span></li>
+          </ul>
+        </div>
+        <div class="intro_text">
+          <h3 class="tit animate" data-animate="motion">안녕하세요 반갑습니다.<br>밝고 책임감있는 퍼블리셔 소정입니다 :)</h3>
+          <p class="txt animate" data-animate="motion">가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text) 가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text) 가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문포부, 다짐, 나를 소개하는 장문의 글 (text) 가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문의 글 (text)가치관, 포부, 다짐, 나를 소개하는 장문
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- 나를소개하는영역끝 -->
+
+    <!-- 이력사항영역시작 -->
+    <section class="contents_info">
+      <h2 class="title en_t animate" data-animate="motion">MY HISTORY :)</h2>
+      <div class="inner">
+        <ul class="info_box">
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">Profile</p>
+            <div class="tit_in">
+              <p class="en">Name</p>
+              <span>김소정</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">Birth</p>
+              <span>1997. 12. 05.</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">Phone</p>
+              <span>010 - 5369 - 4982</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">Mail</p>
+              <span>aaaa3663@naver.com</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">address</p>
+              <span>서울특별시 강서구 마곡동</span>
+            </div>
+          </li>
+          
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">Carrer</p>
+            <div class="tit_in">
+              <p>2021. 04 - 2022. 06</p>
+              <span>아트캐슬 미술학원</span>
+            </div>
+            <div class="tit_in">
+              <p>2019. 02 - 2020. 03</p>
+              <span>지오다노</span>
+            </div>
+          </li>
+  
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">License</p>
+            <div class="tit_in">
+              <p class="en">2021. 03</p>
+              <span>운전면허 자격증 2종보통</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2009. 10</p>
+              <span>정보기술자격(ITQ)</span>
+            </div>
+          </li>
+  
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">Awards</p>
+            <div class="tit_in">
+              <p class="en">2018</p>
+              <span>한국미술협회 나혜석미술대전 입선
+            </div>
+            <div class="tit_in">
+              <p class="en">2018</p>
+              <span>무등 미술대전 입선</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2017</p>
+              <span>코파 글로벌미술대전 특선</span>
+            </div>
+          </li>
+        </ul>
+        
+        <ul class="info_box">
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">Skills</p>
+            <div class="tit_in">
+              <span>Html / Css / Sass / SCSS / javaScript<br>jQuery / Photoshop / Illustrator<br>Adobe XD / figma</span>
+            </div>
+          </li>
+          
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">Education</p>
+            <div class="tit_in">
+              <p>2022. 08 - 2023. 01</p>
+              <span>이젠아카데미 NCS프론트엔드(UI/UX)</span>
+            </div>
+            <div class="tit_in">
+              <p>2020. 08 - 2021. 01</p>
+              <span>그린아카데미 NCS프론트엔드(UI/UX)</span>
+            </div>
+            <div class="tit_in">
+              <p>2017. 03 - 2019. 02</p>
+              <span>백석예술대학교 디자인미술학부 회화과</span>
+            </div>
+          </li>
+  
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">Hobby</p>
+            <div class="tit_in">
+              <span>미술 / 볼링 / 골프</span>
+            </div>
+          </li>
+  
+          <li class="info animate" data-animate="motion">
+            <p class="tit en">International activity</p>
+            <div class="tit_in">
+              <p class="en">2022. 03</p>
+              <span>인사동 갤러리라메르 단체전(셔터展)</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2018. 11</p>
+              <span>인사동 갤러리라메르 졸업전시회</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2018. 11</p>
+              <span>예랑길 벽화작업</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2018. 10</p>
+              <span>뮤지엄그라운드 개관특별전 staff</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2017. 12</p>
+              <span>백석예술대학교 회화전공 대의원회 학회장</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2017. 07</p>
+              <span>SH서울주택도시공사 청년임대주택 벽화조성사업 참여</span>
+            </div>
+            <div class="tit_in">
+              <p class="en">2017. 04</p>
+              <span>예술의전당 &#60;위대한낙서 셰퍼드페어리&#62; OBEY공식 서포터즈</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- 이력사항영역끝 -->
+
+    <!-- 타임라인영역시작 -->
+    <section class="contents_timeline">
+      <div class="ring_bg">
+        <img src="../img/bg_ring_w.svg" alt="배경링" class="a">
+        <img src="../img/bg_ring_w.svg" alt="배경링" class="b">
+        <img src="../img/bg_ring_w.svg" alt="배경링" class="c">
+        <img src="../img/bg_ring_w.svg" alt="배경링" class="d">
+        <img src="../img/bg_ring_w.svg" alt="배경링" class="e">
+        <img src="../img/bg_ring_w.svg" alt="배경링" class="f">
+      </div>
+      <h2 class="title en_t animate" data-animate="motion">TIME LINE</h2>
+      <div class="inner">
+        <ul class="timeline_list">
+          <li class="on animate" data-animate="motion">
+            <div class="cover">
+                <p class="time en">1997. 12. 05</p>
+            <span class="line"></span>
+            <h3 class="t_tit">태어난 날</h3>
+            <p class="t_txt">12월 겨울에 태어났습니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2009</p>
+              <span class="line"></span>
+              <h3 class="t_tit">컴퓨터 자격증 중독</h3>
+              <p class="t_txt">우연히 듣게된 방과후 컴퓨터수업이 너무 즐거웠고, 처음으로 딴 워드 자격증을 시작으로 엑셀, 파워포인트, ITQ등등 자격증을 차곡차곡 모았어요. 이때 메모장 코딩으로 웹사이트 제작하는 것을 처음 접했습니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2013</p>
+              <span class="line"></span>
+              <h3 class="t_tit">미술을 시작하다</h3>
+              <p class="t_txt">제가 가장 좋아하고 잘 하는 미술을 시작 했어요. 그림그리는 기술을 배우고 공부해서 미적 안목과 그림실력을 키웠습니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2016</p>
+              <span class="line"></span>
+              <h3 class="t_tit">미대입시<br>실패와 재수</h3>
+              <p class="t_txt">현역 입시에 실패하고 말았어요. 재수는 정말 힘들었던 일이었지만, 이 시기에 인생에 대해 공부하고 생각이 성숙해진 시기라서 제게 정말 좋은 경험이었어요.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2017</p>
+              <span class="line"></span>
+              <h3 class="t_tit">대학교 입학과<br>학회장 선발</h3>
+              <p class="t_txt">교수님과 학우들에게 감사하게도 좋은 평판을 받아 학회장 선거에 나가게 되었고, 선발 되었어요. 이때 어쩌면 인생에서 경험하기 힘든 귀한 일들을 많이 접하며 세상을 바라보는 시견이 넓어졌습니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2020</p>
+              <span class="line"></span>
+              <h3 class="t_tit">프론트엔드 과정에<br>딛는 첫 발걸음</h3>
+              <p class="t_txt">웹과정에 관심이 생겨 학원을 등록했고, 적성에 잘 맞았습니다. 하지만 전공관련 일을 먼저 경험해보고 싶었기에, 배운 내용을 잠시 접어두었습니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2021</p>
+              <span class="line"></span>
+              <h3 class="t_tit">미술학원 선생님</h3>
+              <p class="t_txt">미술선생님이라는 직업은 매우 즐거웠지만, 웹개발자가 되고싶은 꿈을 꼭 이루고 싶었기에 잠시 접어둔 꿈을 다시한번 꺼냅니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2021</p>
+              <span class="line"></span>
+              <h3 class="t_tit">볼링이라는<br>진득한 취미</h3>
+              <p class="t_txt">처음으로 미친듯이 열중하게 된 취미입니다. 볼링은 저에게 무언가에 흥미를 가져 꾸준히 탐구하고 잘 하기위해 노력하는 재미를 알게해준 고마운 취미입니다.</p>
+            </div>
+          </li>
+          <li class="animate" data-animate="motion">
+            <div class="cover">
+              <p class="time en">2022</p>
+              <span class="line"></span>
+              <h3 class="t_tit">프론트엔드 과정에<br>다시한번 도전</h3>
+              <p class="t_txt">돌아 왔기에 웹 과정에 더 열심히, 열정적으로 임하였습니다. 다시한번 더 배우니 오히려 이해도 더 잘 되었고, 그러면서 재미와 흥미도 더 높아지고, 욕심이 생기는 공부가 되었습니다.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="end">
+          <p class="end_tit animate" data-animate="motion">그리고 지금의 멋진 나!</p>
+          <p class="end_txt animate" data-animate="motion">무슨 일이든 항상 긍정과 진심으로 임하며<br>열정을 다하는 행위에 즐거움을 느끼며 지내는 중입니다 :D</p>
+        </div>
+      </div>
+    </section>
+    <!-- 타임라인영역끝 -->
+
+    <!-- 취미영역시작 -->
+    <section class="contents_hobby">
+      <h2 class="title en_t animate" data-animate="motion">HOBBY</h2>
+      <div class="hobbyBox">
+        <div class="left_sec">
+          <ul class="hobby_img">
+            <li class="bowling animate" data-animate="motion" cursor-class="overlay">
+              <img src="../img/hobby_bowling.jpg" alt="볼링공을 든 모습">
+            </li>
+            <li class="golf animate" data-animate="motion" cursor-class="overlay">
+              <img src="../img/hobby_golf.jpg" alt="볼링공을 든 모습">
+            </li>
+            <li class="art animate" data-animate="motion" cursor-class="overlay">
+              <img src="../img/hobby_art.jpg" alt="볼링공을 든 모습">
+            </li>
+          </ul>
+        </div>
+        <div class="right_sec">
+          <ul class="hobby_list">
+            <li class="bowling on animate" data-animate="motion">
+              <h3 class="hobby_name en">BOWLING</h3>
+              <p>약 1년 반동안 꾸준히 유지하고 있는 취미입니다.<br><br>
+                재미로 시작했다가 이젠 장비도 사고 전문적으로 깊이 파고있습니다.
+                무언가에 흥미를 가져 꾸준히 탐구하고 잘 하기위해 노력하는 재미를 알게해준 고마운 취미입니다.</p>
+            </li>
+            <li class="golf animate" data-animate="motion">
+              <h3 class="hobby_name en">GOLF</h3>
+              <p>볼링 다음으로 즐기고 있는 취미 입니다.<br><br>
+                클럽장비도 맞추고 연습도 열심히 하고 있습니다.
+                저는 공을 가지고 하는 스포츠를 좋아하나 봅니다 :)</p>
+            </li>
+            <li class="art animate" data-animate="motion">
+              <h3 class="hobby_name en">ART</h3>
+              <p>미술을 좋아합니다.<br><br>
+                예술적 감각은 제가 어떤 일을 하든 도움이 되고 깊은 연관이 있으며, 긍정적이고 좋은 힘을 발휘합니다.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- 취미영역끝 -->
+
+    <!-- 대외활동역역시작 -->
+    <section class="contents_activity">
+      <h2 class="title en_t animate" data-animate="motion">INTERNATIONAL ACTIVITY</h2>
+      <div class="inner">
+        <ul class="folder">
+          <li class="animate" data-animate="motion" cursor-class="overlay">
+            <a href="#" target="_blank">
+              <div class="f_cover">
+                <div class="f_back">
+                  <img src="../img/folder_back.svg" alt="폴더뒷면">
+                </div>
+                <span class="paper"></span>
+                <div class="f_front">
+                  <img src="../img/folder_front.svg" alt="폴더앞면">
+                </div>
+                <p class="char">
+                  <img src="../img/my_char.svg" alt="소정 캐릭터">
+                </p>
+              </div>
+            </a>
+            <p class="f_tit">인사동 갤러리 라메르 단체전(셔터展)</p>
+          </li>
+          <li class="animate" data-animate="motion" cursor-class="overlay">
+            <a href="#">
+              <div class="f_cover">
+                <div class="f_back">
+                  <img src="../img/folder_back.svg" alt="폴더뒷면">
+                </div>
+                <span class="paper"></span>
+                <div class="f_front">
+                  <img src="../img/folder_front.svg" alt="폴더앞면">
+                </div>
+                <p class="char">
+                  <img src="../img/my_char.svg" alt="소정 캐릭터">
+                </p>
+              </div>
+            </a>
+            <p class="f_tit">인사동 갤러리 라메르 졸업전시회</p>
+          </li>
+          <li class="animate" data-animate="motion" cursor-class="overlay">
+            <a href="#">
+              <div class="f_cover">
+                <div class="f_back">
+                  <img src="../img/folder_back.svg" alt="폴더뒷면">
+                </div>
+                <span class="paper"></span>
+                <div class="f_front">
+                  <img src="../img/folder_front.svg" alt="폴더앞면">
+                </div>
+                <p class="char">
+                  <img src="../img/my_char.svg" alt="소정 캐릭터">
+                </p>
+              </div>
+            </a>
+            <p class="f_tit">예랑길 벽화작업</p>
+          </li>
+          <li class="animate" data-animate="motion" cursor-class="overlay">
+            <a href="#">
+              <div class="f_cover">
+                <div class="f_back">
+                  <img src="../img/folder_back.svg" alt="폴더뒷면">
+                </div>
+                <span class="paper"></span>
+                <div class="f_front">
+                  <img src="../img/folder_front.svg" alt="폴더앞면">
+                </div>
+                <p class="char">
+                  <img src="../img/my_char.svg" alt="소정 캐릭터">
+                </p>
+              </div>
+            </a>
+            <p class="f_tit">백석예술대학교 회화전공 대의원회 학회장</p>
+          </li>
+          <li class="animate" data-animate="motion" cursor-class="overlay">
+            <a href="#">
+              <div class="f_cover">
+                <div class="f_back">
+                  <img src="../img/folder_back.svg" alt="폴더뒷면">
+                </div>
+                <span class="paper"></span>
+                <div class="f_front">
+                  <img src="../img/folder_front.svg" alt="폴더앞면">
+                </div>
+                <p class="char">
+                  <img src="../img/my_char.svg" alt="소정 캐릭터">
+                </p>
+              </div>
+            </a>
+            <p class="f_tit">SH서울주택도시공사<br>청년임대주택 벽화조성사업</p>
+          </li>
+          <li class="animate" data-animate="motion" cursor-class="overlay">
+            <a href="#">
+              <div class="f_cover">
+                <div class="f_back">
+                  <img src="../img/folder_back.svg" alt="폴더뒷면">
+                </div>
+                <span class="paper"></span>
+                <div class="f_front">
+                  <img src="../img/folder_front.svg" alt="폴더앞면">
+                </div>
+                <p class="char">
+                  <img src="../img/my_char.svg" alt="소정 캐릭터">
+                </p>
+              </div>
+            </a>
+            <p class="f_tit">예술의전당 &#60;위대한낙서 셰퍼드페어리&#62; OBEY공식 서포터즈</p>
+          </li>
+        </ul>
+        <!-- modal시작 -->
+        <!-- 1 -->
+        <div class="modal">
+          <div class="modal_content">
+            <div class="section">
+              <div class="close_modal">
+                <img src="../img/close_modal.svg" alt="">
+              </div>
+              <div class="left_box">
+                <h2 class="title">인사동 갤러리 라메르 단체전(셔터展)</h2>
+                <p class="date en">2022. 03 - 2022. 04</p>
+                <p class="text">인사동 갤러리 라메르에서 단체전을 진행 했었습니다.<br><br>작품제목은 '구'이고 50호F 사이즈 2작을 진행, 목탄화로 작업 하였습니다.<br>작가노트는 '불완전한 구, 나'로 완전한 요소 구에 불완전한 요소(나 그자체와 감정들)를<br>덕지덕지 붙여 완전하고 싶고 완벽하고 싶은 나를 구에 투영 해 보았습니다.<br><br>전시준비에서 제 <span>포지션</span>은 작가, 포스터제작, 현수막제작, 전시주제기획, DP총괄자 등으로 <span>리더의 역할</span>을 맡았습니다.<br><br>대학시절 <span>학회장과 졸업전시준비위원회</span>를 맡으며<br>갤러리 대관과 미팅, 작품진행, 운반, 작품도록과 엽서 출판/인쇄를 위한 인쇄소 계약 등을 <span>경험</span>하였기에<br>이번 전시는 물 흐르듯 준비되어 쾌거를 이루었습니다.<br><br>작품활동은 언제나 설레고 제 상상력을 자극하며 <span>자신감을 얻어주는 좋은 영향</span>을 끼칩니다.</p>
+              </div>
+              <div class="right_box">
+                <div class="left">
+                  <p>
+                    <img src="../img/activity_1_1.png" alt="내작품앞의 나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_3.png" alt="셔터전 동료들과 단체사진">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_7.png" alt="전시디피현장">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_10.png" alt="학생들에게 작품설명">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_9.png" alt="도록과엽서">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_11.png" alt="갤러리게시판의 현수막">
+                  </p>
+                </div>
+                <div class="right">
+                  <p>
+                    <img src="../img/activity_1_2.png" alt="전시포스터">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_4.png" alt="나의작품 두점">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_6.png" alt="전시현수막">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_5.png" alt="작품앞에 꽃을든 나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_1_8.png" alt="전시축하선물로 받은 케이크">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal">
+          <div class="modal_content">
+            <div class="section">
+              <div class="close_modal">
+                <img src="../img/close_modal.svg" alt="">
+              </div>
+              <div class="left_box">
+                <h2 class="title">인사동 갤러리 라메르 졸업전시회</h2>
+                <p class="date en">2018.11 - 2018.11</p>
+                <p class="text">
+                  인사동 갤러리 라메르에서 회화과 졸업전시회를 했었습니다.<br><br>
+                  전 학회장과 졸업전시준비위원회를 겸하여 졸준위 임원들과 함께 졸업전시 준비를 <span>시작부터 마무리까지 진행하고 총괄</span>하였습니다.<br><br>
+                  졸업작품 중간평가 진행과 갤러리 예약, 디자인회사와 전시 도록 & 포스터 출판 미팅, 졸업전시 사회지 작성과 사회, 케이터링 예약까지 도맡아 하였고<br>
+                  총장님과 귀빈, 내빈 분들에게 <span>도슨트 하며 작품설명</span>도 했습니다.<br><br>
+                  그림도 그려야하고 졸업전시를 위한 준비도 해야해서 촉박하였지만, 제게 정말 귀중한 경험입니다.<br>
+                  미술전시가 <span>진행되는 과정</span>도 알게 되었고, 작품DP를 보는 감도 생기고, 그 뒤로 동문들과 단체전시회를 할 때에도 전시준비 경험이 있었기에
+                  모든 일이 수월하게 진행 될 수 있었습니다. <br><br>
+                  정말 중요한 전시를 제가 <span>리드하여 사회를 보며 진행</span>하고, 리본 컷팅식에 제가 <span>학생 대표</span>로 참여하여 리본을 자른 순간이 아직도 생생합니다 :)
+                </p>
+              </div>
+              <div class="right_box">
+                <div class="left">
+                  <p>
+                    <img src="../img/activity_2_1.png" alt="사회보는 나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_2_2.png" alt="컷팅식에 참여한 나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_2_3.jpg" alt="전시포스터">
+                  </p>
+                </div>
+                <div class="right">
+                  <p>
+                    <img src="../img/activity_2_4.png" alt="단체사진">
+                  </p>
+                  <p>
+                    <img src="../img/activity_2_5.png" alt="나의 졸업작품">
+                  </p>
+                  <p>
+                    <img src="../img/activity_2_6.png" alt="졸업전시위원회와 단체사진">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="modal">
+          <div class="modal_content">
+            <div class="section">
+              <div class="close_modal">
+                <img src="../img/close_modal.svg" alt="">
+              </div>
+              <div class="left_box">
+                <h2 class="title">예랑길 벽화작업</h2>
+                <p class="date en">2018.11 - 2018.12</p>
+                <p class="text">
+                  백석예술대학교 회화과에서 진행한 예랑길 벽화작업에 참여했었습니다.<br><br>
+                  작업 전 교수님들과 함께 <span>도안 만들기</span>를 진행하였고 완성된 도안을 바탕으로<br>철로 된 오브제도 붙이고 벽에 스케치를 한 후 페인트를 골라 색을 조색하고 <span>큰 영역부터 작은 영역</span>을 칠하는 순서로 벽을 채워 나갔습니다.<br><br>한겨울에 작업하느라 손이 꽁꽁 얼고 페인트도 금새 말라서 작업하는데 있어 수월하진 않았지만, 과 친구들과 <span>함께 임했기에</span> 힘든 고비를 넘겨 성공적인 벽화작업으로 마무리 할 수 있었습니다.<br><br>학교에 남는 낮은 벽을 학우들과 함께 벽화로 채워 <span>기쁜 경험</span>이었습니다.
+                </p>
+              </div>
+              <div class="right_box">
+                <div class="left">
+                  <p>
+                    <img src="../img/activity_3_1.JPG" alt="벽화그리는 나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_3_6.JPG" alt="사진촬영">
+                  </p>
+                  <p>
+                    <img src="../img/activity_3_2.JPG" alt="팔렛트">
+                  </p>
+                </div>
+                <div class="right">
+                  <p>
+                    <img src="../img/activity_3_4.JPG" alt="벽화그리는 나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_3_3.JPG" alt="벽화설명">
+                  </p>
+                  <p>
+                    <img src="../img/activity_3_5.JPG" alt="팔렛트">
+                  </p>
+                  <p>
+                    <img src="../img/activity_3_7.png" alt="벽화앞">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="modal">
+          <div class="modal_content">
+            <div class="section">
+              <div class="close_modal">
+                <img src="../img/close_modal.svg" alt="">
+              </div>
+              <div class="left_box">
+                <h2 class="title">백석예술대학교 회화전공 대의원회 학회장</h2>
+                <p class="date en">2017.12 - 2019.02</p>
+                <p class="text">
+                  백석예술대학교 회화과에서 저는 대의원회 학회장 직책을 맡았었습니다.<br><br>
+                  감사하게도 교수님과 학생분들이 저를 너무나 좋게 봐주셔서 선거에서 선발 될 수 있었고,<br>
+                  제 <span>역할</span>은 우리 과의 <span>모든 행사와 일정, 졸업을 관리</span>하고, <br>
+                  학생회와 다른 과 대의원들과 의견을 모아 학교의 학사일정과 처우를 두고 학생들 모두가 <span>만족</span>하고 <span>공평</span>할 수 있도록 회의하고 도왔습니다.<br><br>
+                  이 시기에 <span>회의를 매주 진행</span>하며 서로 의견을 브리핑해 수립하는 기회가 많았습니다.<br>
+                  교수회의도 참석하여 높은 분들과 <span>대화하는 법</span>도 많이 배우고, <br>
+                  학생 대표로서 학생들이 학교생활 하는데에 불편하지 않도록 <span>책임감과 사명감</span>을 갖고 임하였습니다.<br><br>
+                  내가 무언가를 책임진다는 것에대한 막중함과 그것을 잘 지켜냈을때의 기쁨은 정말 멋진 일이라고 깨달았습니다.
+                  학회장을 한 경험은 제 인생에서 <span>자랑스러운 순간</span>들 중 하나로 손꼽을 수 있습니다 :)
+                </p>
+              </div>
+              <div class="right_box">
+                <div class="left">
+                  <p>
+                    <img src="../img/activity_4_1.jpg" alt="졸업작품 평가준비">
+                  </p>
+                  <p>
+                    <img src="../img/activity_4_2.jpg" alt="회화과임원들과 ">
+                  </p>
+                  <p>
+                    <img src="../img/activity_4_4.jpg" alt="학교축제">
+                  </p>
+                </div>
+                <div class="right">
+                  <p>
+                    <img src="../img/activity_4_3.jpg" alt="나">
+                  </p>
+                  <p>
+                    <img src="../img/activity_4_5.jpg" alt="미술대회접수준비">
+                  </p>
+                  <p>
+                    <img src="../img/activity_4_6.jpg" alt="임원과 회의중">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="modal">
+          <div class="modal_content">
+            <div class="section">
+              <div class="close_modal">
+                <img src="../img/close_modal.svg" alt="">
+              </div>
+              <div class="left_box">
+                <h2 class="title">SH서울주택도시공사 임대주택 벽화조성사업 참여</h2>
+                <p class="date en">2017.07 - 2017.07</p>
+                <p class="text">
+                  SH서울주택도시공사에서 주최한 청년임대주택 벽화조성사업에 재능기부로 참여하였습니다.<br><br>
+                  처음 경험해보는 벽화작업이란 사실에 설레였던 기분이 기억납니다.<br><br>
+                  작업 전 도안을 받아 교수님들과 함께 컨펌을 진행하였고 완성된 도안을 바탕으로<br>벽에 스케치를 한 후 페인트를 골라 색을 조색하고 <span>큰 영역부터 작은 영역</span>을 칠하는 순서로 벽을 채워 나갔습니다.<br><br>날씨도 무척 덥고 큰 벽을 채워나가는 것이 <span>정말 힘들었지만,</span> 함께 작업하는 친구들과 으쌰으쌰 <span>서로 힘을 주고 응원하며 임했기에</span> 힘든 고비를 넘겨<br><span>성공적인 벽화작업으로 마무리</span> 할 수 있었습니다.<br><br>좋은 취지의 사업에 참여하게 되어 <span>뿌듯하고 기쁜 경험</span>이었습니다.
+                </p>
+              </div>
+              <div class="right_box">
+                <div class="left">
+                  <p>
+                    <img src="../img/activity_5_1.JPG" alt="단체사진">
+                  </p>
+                  <p>
+                    <img src="../img/activity_5_2.JPG" alt="작업하는모습">
+                  </p>
+                  <p>
+                    <img src="../img/activity_5_3.JPG" alt="페인트">
+                  </p>
+                </div>
+                <div class="right">
+                  <p>
+                    <img src="../img/activity_5_5.JPG" alt="벽화">
+                  </p>
+                  <p>
+                    <img src="../img/activity_5_6.JPG" alt="페인트">
+                  </p>
+                  <p>
+                    <img src="../img/activity_5_4.JPG" alt="벽화도안">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="modal">
+          <div class="modal_content">
+            <div class="section">
+              <div class="close_modal">
+                <img src="../img/close_modal.svg" alt="">
+              </div>
+              <div class="left_box">
+                <h2 class="title"> 예술의전당 &#60;위대한낙서 셰퍼드페어리&#62; OBEY공식 서포터즈</h2>
+                <p class="date en">2017.04 - 2017.05</p>
+                <p class="text">
+                  예술의 전당에서 주최한 &#60;위대한낙서 셰퍼드페어리&#62; 에서 셰퍼드페어리의 내한을 기념하며 OBEY공식 서포터즈로 선발 됐었습니다.<br><br>
+                  셰퍼드페어리가 지금까지 오게 된 역사를 읽고 <span>몸소 체험하며 전시를 홍보하는 활동</span> 이었습니다.<br><br>
+                  활동기간중 기억에 남는일은 작가의 삶 - 스티커 붙이고 다니기, 스프레이로 그래피티하기, 포스터 붙여 홍보하기 - 을 직접 체험해 보는 활동이 있고,<br>
+                  셰퍼드페어리와 그의 크루원들과 큰 벽에 스티커페인팅 작업을 함께 했던 일이 기억에 남습니다.<br><br>                  
+                  미스틱과 셰퍼드페어리측이 주최한 언더스테이지에서 셀럽파티에 초대되어 가고,<br> 
+                  사인회를 개최 했을때에는 수많은 사람들을 인솔하고 안내 정리하였습니다.<br><br>                  
+                  전시를 알리기 위해 팀원들과 <span>더 나은 기획</span>을 위한 <span>노력</span>을 하고 그 일이 성공적으로 끝났을 때 정말 뿌듯했던 경험 이었습니다.
+                </p>
+              </div>
+              <div class="right_box">
+                <div class="left">
+                  <p>
+                    <img src="../img/activity_6_1.png" alt="공식계정에 올라간 활동사진">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_2.JPG" alt="오베이크루와 찍은사진">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_4.JPG" alt="서포터즈 카드">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_6.JPG" alt="기획서">
+                  </p>
+                </div>
+                <div class="right">
+                  <p>
+                    <img src="../img/activity_6_3.JPG" alt="사람들에게 홍보하는 모습">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_5.JPG" alt="셰퍼드페어리와 작업">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_7.JPG" alt="전시포스터">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_8.jpg" alt="단체사진">
+                  </p>
+                  <p>
+                    <img src="../img/activity_6_9.JPG" alt="미스틱 주최 클럽파티">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal끝 -->
+      </div>
+    </section>
+    <!-- 대외활동역역끝 -->
+
+    <!-- 감사인사영역시작 -->
+    <section class="thanks_sec">
+      <h2 class="thanks en_t animate" data-animate="motion">Thank you for reviewing<br>my portfolio!</h2>
+    </section>
+    <!-- 감사인사영역끝 -->
+
+    <!-- 컨택영역시작(푸터) -->
+    <footer id="contact" class="contact_wrap" cursor-class="footerCursor">
+      <div class="footer_top">
+        <h2 class="for">유능한 인재를 찾고 계신다면,</h2>
+        <div class="visual_my contact" cursor-class="overlay">
+          <span class="mySec">
+            <img src="../img/myprofile_min.png" alt="소정의프로필사진">
+          </span>
+          <p class="mySec">
+            <a href="../pdf/김소정_이력서.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">이력서 보러가기<img class="arr" src="../img/arrow_link.svg" alt="바로가기아이콘">
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer_bottomWrap">
+        <p class="email en_t">
+          <a href="mailto:aaaa3663@naver.com" cursor-class="overlay">aaaa3663@naver.com</a>
+        </p>
+        <div class="footer_bottom">
+          <ul class="sns">
+            <li cursor-class="overlay">
+              <a href="https://open.kakao.com/o/sceJdUXd" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_kakao.svg" alt="카카오톡아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="https://github.com/kaia-dan" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_github.svg" alt="깃허브아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="https://www.instagram.com/_ho__ji" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_instagram.svg" alt="인스타그램아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="https://kaia-dan.tistory.com/" onclick="window.open(this.href, '_blank'); return false;"><img src="../img/ico_tistory.svg" alt="티스토리아이콘"></a>
+            </li>
+            <li cursor-class="overlay">
+              <a href="../pdf/김소정_이력서.pdf" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;"><img src="../img/ico_resume.png" alt="이력서아이콘"></a>
+            </li>
+          </ul>
+          <ul class="list en">
+            <li>82+) 10 - 5369 - 4982</li>
+            <li>COPYRIGHTⓒ2022.</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- 컨택영역끝(푸터) -->
+  </div>
+
+  <script>
+
+    gsap.registerPlugin(ScrollTrigger); //플러그인 안정화
+
+
+    // 취미영역의 배경svg애니메이션
+    let bgLingA = gsap.utils.toArray(".ring_bg img.a");
+    let bgLingB = gsap.utils.toArray(".ring_bg img.b");
+    let bgLingC = gsap.utils.toArray(".ring_bg img.c");
+    let bgLingD = gsap.utils.toArray(".ring_bg img.d");
+    let bgLingE = gsap.utils.toArray(".ring_bg img.e");
+    let bgLingF = gsap.utils.toArray(".ring_bg img.f");
+
+    gsap.to(bgLingA, {
+      y: -500,
+      rotation: 50,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        // pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingB, {
+      // y: -80,
+      rotation: 45,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        // pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingC, {
+      rotation: -35,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        // pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+
+    gsap.to(bgLingD, {
+      y: -100,
+      rotation: -35,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        // pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingE, {
+      rotation: -45,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        // pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingF, {
+      y: -250,
+      rotation: 25,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        // pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+  </script>
+</body>
+</html>
