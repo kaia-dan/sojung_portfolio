@@ -1374,6 +1374,12 @@ footer.contact_wrap{
     filter: grayscale(100%); border-radius: 10px; overflow: hidden;
     background: url(../img/hobby_bowling.jpg) center/cover; transition: all 0.3s;
   }
+  .hobbyBox .right_sec .hobby_list li:nth-child(2) p::before{
+    background: url(../img/hobby_golf.jpg) center/cover;
+  }
+  .hobbyBox .right_sec .hobby_list li:nth-child(3) p::before{
+    background: url(../img/hobby_art.jpg) center/cover;
+  }
   .hobbyBox .right_sec .hobby_list li p:hover::before{
     filter: grayscale(0%);
   }
