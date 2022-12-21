@@ -1,3 +1,5 @@
+console.log("ෆ⸒⸒⸜( ˶'ᵕ'˶)⸝ 안녕하세요 제 포트폴리오를 보러 와주셔서 감사합니다! :) ✿");
+
 //스크립트 위로 튕기는것 (a태그 눌렀을때 위로 튕기는거 막아줌)
 $(document).on('click', 'a[href="#"]', function(e){
   e.preventDefault();
