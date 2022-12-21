@@ -1306,6 +1306,9 @@ footer.contact_wrap{
   .footer_bottom .list li{
     font-size: 1.3rem;
   }
+  .footer_bottom .list li:first-child{
+    opacity: 0;
+  }
   .footer_top .for{
     padding-top: 20vh;
     font-size: 2rem;
