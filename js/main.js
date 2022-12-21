@@ -11,7 +11,7 @@ var fixedNum_thanks = $("section.thanks_sec").offset().top;
 var fixedNum_contact = $("footer.contact_wrap").offset().top;
 
 
-console.log(fixedNum_ncs);
+// console.log(fixedNum_ncs);
 
 /* 반응형을 위한 윈도우사이즈 불러오기 */
 $(window).resize(function(){ 
@@ -24,12 +24,14 @@ $(window).resize(function(){
   // 리사이즈 끝나고 0.3초마다 리셋
     var delay = 300;
     var timer = null; 
-    $(window).on('resize', function(){
-      clearTimeout(timer);
-      timer = setTimeout(function(){
-      document.location.reload();
-      }, delay);
-    });
+    if (window.innerWidth > 500){
+      $(window).on('resize', function(){
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+        document.location.reload();
+        }, delay);
+      });
+    };
 
     //현재 위치를 기억하여 새로고침시 그자리를 유지하기
     history.scrollRestoration = "auto";
