@@ -57,7 +57,7 @@ $(window).resize(function(){
         // info텍스트변경
         $(".header_inner .logo .head_info").text("sjLIKE IT'");
       };
-      if(scrollTop > fixedNum_info*0.25){
+      if(scrollTop > fixedNum_info*0.15){
         $(".visual_my").addClass("on");
       }else{
         $(".visual_my").removeClass("on");
