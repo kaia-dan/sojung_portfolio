@@ -354,6 +354,7 @@ section.contents_introduce{
 .intro_box .intro_img .img_in img{
   width: 100%;
   transition: all 0.3s;
+  border-radius: 10px;
   filter: grayscale(100%);
 }
 /* hover */
@@ -1013,6 +1014,11 @@ footer.contact_wrap{
 .visual_my .mySec img{
   width: 100%;
   display: block;
+  transition: all 0.3s;
+  filter: grayscale(100%);
+}
+.visual_my .mySec img:hover{
+  filter: grayscale(0%);
 }
 /* ===공통영역(내사진)끝=== */
 

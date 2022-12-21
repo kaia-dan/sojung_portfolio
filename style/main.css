@@ -450,6 +450,7 @@ h2.title{
   width: 100%; 
   display: block;
   transition: all 0.3s;
+  border-radius: 10px;
   filter: grayscale(100%);
 }
 /* hover */
