@@ -5,14 +5,14 @@ $(window).resize(function(){
   /* ====스크롤값을 불러오는 함수 시작==== */
   $(document).on("scroll resize", function(){
    // 리사이즈 끝나고 0.3초마다 리셋
-    var delay = 300;
-    var timer = null; 
-    $(window).on('resize', function(){
-      clearTimeout(timer);
-      timer = setTimeout(function(){
-      document.location.reload();
-      }, delay);
-    });
+    // var delay = 300;
+    // var timer = null; 
+    // $(window).on('resize', function(){
+    //   clearTimeout(timer);
+    //   timer = setTimeout(function(){
+    //   document.location.reload();
+    //   }, delay);
+    // });
     
     //현재 위치를 기억하여 새로고침시 그자리를 유지하기
     history.scrollRestoration = "auto";
