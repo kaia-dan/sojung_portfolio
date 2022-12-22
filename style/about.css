@@ -407,8 +407,9 @@ section.contents_introduce{
   animation-duration: 1s;
 }
 .intro_box .intro_text .txt{
-  text-align: right;
-  padding-left: 70px; box-sizing: border-box;
+  width: 100%;
+  text-align: justify;
+  box-sizing: border-box;
   opacity: 0.8;
 }
 /* 나를소개하는영역끝 */

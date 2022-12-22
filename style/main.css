@@ -491,8 +491,8 @@ h2.title{
 }
 .intro_box .intro_right .sc.first_sc .txt{
   width: 100%; 
-  padding-left: 10%; box-sizing: border-box;
-  text-align: right;
+  box-sizing: border-box;
+  text-align: justify;
   line-height: 1.4;
   margin-bottom: 5vh;
   opacity: 0.8;
