@@ -1380,10 +1380,10 @@ footer.contact_wrap{
     content: "";
     position: absolute; width: 80%; height: 40vh; left: -103%; top: -64px;
     filter: grayscale(100%); border-radius: 10px; overflow: hidden;
-    background: url(../img/hobby_bowling.jpg) center/cover; transition: all 0.3s;
+    background: url(../img/hobby_bowling.png) center/cover; transition: all 0.3s;
   }
   .hobbyBox .right_sec .hobby_list li:nth-child(2) p::before{
-    background: url(../img/hobby_golf.jpg) center/cover;
+    background: url(../img/hobby_golf.png) center/cover;
   }
   .hobbyBox .right_sec .hobby_list li:nth-child(3) p::before{
     background: url(../img/hobby_art.jpg) center/cover;
