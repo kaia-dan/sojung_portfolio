@@ -59,14 +59,16 @@ $(window).resize(function(){
   $(document).on("scroll resize", function(){
     
   // 리사이즈 끝나고 0.3초마다 리셋
-    var delay = 300;
-    var timer = null; 
+  var delay = 300;
+  var timer = null; 
+  if (window.innerWidth > 500){
     $(window).on('resize', function(){
       clearTimeout(timer);
       timer = setTimeout(function(){
       document.location.reload();
       }, delay);
     });
+  };
 
     //현재 위치를 기억하여 새로고침시 그자리를 유지하기
     history.scrollRestoration = "auto";
