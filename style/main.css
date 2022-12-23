@@ -1958,11 +1958,12 @@ footer.contact_wrap{
   }
   /* 기록영역 */
   section.contents_record{
-    height: 800px;
+    height: 850px;
     margin-top: 0; position: relative;
   }
   .record_bg{
     font-size: 7.4vw;
+    height: unset;
     /* display: none; */
   }
   .record_list{
