@@ -1549,6 +1549,9 @@ footer.contact_wrap{
     left: -30px;
   }
   /* 취미영역 */
+  section.contents_hobby{
+    background: none;
+  }
   .hobbyBox .right_sec .hobby_list li{
     margin: 0 auto 50px;
     height: 50vh;
@@ -1558,8 +1561,10 @@ footer.contact_wrap{
   }
   .hobbyBox .right_sec .hobby_list li .hobby_name::before{
     width: 25px; height: 25px;
+    left: -32px;
+    background: #FF4A1C;
   }
-  .hobbyBox .right_sec .hobby_list li p::before{
+  .hobbyBox .right_sec .hobby_list li::before{
     height: 100%; left: -103%; top: 0;
   }
   /* 대외활동영역 */
