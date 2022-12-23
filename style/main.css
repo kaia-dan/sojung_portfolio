@@ -1908,13 +1908,29 @@ footer.contact_wrap{
   /* ncs영역 */
   section.contents_ncs{
     margin-top: 0; position: relative;
-    padding: 0 10%;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    align-content: center;
   }
   .ncs_title{
     display: none;
+    width: 100%; height: unset;
+  }
+  .ncs_title .ncs{
+    transform: none;
+    position: static;
+  }
+  .ncs_title .ncs.motion{
+    transform: none;
   }
   .ncs_list{
     width: 100%;
+  }
+  .ncs_list li{
+    width: 49%;
+  }
+  .ncs_list li:first-child{
+    margin-top: 0;
   }
   /* 아트워크영역 */
   section.contents_artwork{
@@ -1945,6 +1961,18 @@ footer.contact_wrap{
   }
   .record_bg{
     font-size: 7.4vw;
+    display: none;
+  }
+  .record_list{
+    width: 100%;
+    align-content: flex-end;
+  }
+  .record_list li:nth-child(n + 5){
+    display: none;
+  }
+  .record_list li a{
+    background: none;
+    border: 1px solid #003D31;
   }
   /* 취미영역 */
   section.contents_hobby{
