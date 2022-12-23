@@ -12,10 +12,9 @@
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script defer src="js/script.js"></script>
   <script defer src="js/main.js"></script>
-
+  <!-- plugin -->
   <script src="js/scrolla.jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
-
   <!-- gsap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
@@ -34,6 +33,9 @@
   <link rel="shortcut icon" type="image⁄x-icon" href="img/logo_yellow.png">
 
   <link rel='stylesheet' href='https://use.typekit.net/kfu3rpe.css'>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  
   <title>소정의 포트폴리오 입니다 :)</title>
 </head>
 <body>
@@ -399,9 +401,9 @@
     <!-- 코딩리스트영역시작 -->
     <section class="contents_codelist">
       <h2 class="hidden">소정의 코딩리스트</h2>
-      <div class="code_slide_wrap">
-        <ul class="code_list">
-          <li class="green" cursor-class="overlay">
+      <div class="code_slide_wrap swiper mySwiper">
+        <ul class="code_list swiper-wrapper">
+          <li class="green swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_codeplus.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Code plus</p>
               <p class="tit">Renewal</p>
@@ -411,7 +413,7 @@
               </span>
             </a>
           </li>
-          <li class="yellow" cursor-class="overlay">
+          <li class="yellow swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_magazineb.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Magazine B</p>
               <p class="tit">Clone coding</p>
@@ -421,7 +423,7 @@
               </span>
             </a>
           </li>
-          <li class="green" cursor-class="overlay">
+          <li class="green swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_h1company.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">h1company</p>
               <p class="tit">Team project</p>
@@ -431,7 +433,7 @@
               </span>
             </a>
           </li>
-          <li class="white" cursor-class="overlay">
+          <li class="white swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_musign.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Musign</p>
               <p class="tit">Clone coding</p>
@@ -441,7 +443,7 @@
               </span>
             </a>
           </li>
-          <li class="yellow" cursor-class="overlay">
+          <li class="yellow swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_daebang.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Daebang</p>
               <p class="tit">Clone coding</p>
@@ -451,7 +453,7 @@
               </span>
             </a>
           </li>
-          <li class="green" cursor-class="overlay">
+          <li class="green swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_dopda.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Dopda</p>
               <p class="tit">Clone coding</p>
@@ -461,7 +463,7 @@
               </span>
             </a>
           </li>
-          <li class="white" cursor-class="overlay">
+          <li class="white swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_phomein.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Phomein</p>
               <p class="tit">Clone coding</p>
@@ -471,7 +473,7 @@
               </span>
             </a>
           </li>
-          <li class="green" cursor-class="overlay">
+          <li class="green swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_ystudio.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Y studio</p>
               <p class="tit">Clone coding</p>
@@ -481,7 +483,7 @@
               </span>
             </a>
           </li>
-          <li class="yellow" cursor-class="overlay">
+          <li class="yellow swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_hanwha.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Hanwha</p>
               <p class="tit">Clone coding</p>
@@ -491,7 +493,7 @@
               </span>
             </a>
           </li>
-          <li class="green" cursor-class="overlay">
+          <li class="green swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_studiotomboy.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Studio tomboy</p>
               <p class="tit">Clone coding</p>
@@ -501,7 +503,7 @@
               </span>
             </a>
           </li>
-          <li class="white" cursor-class="overlay">
+          <li class="white swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_memez.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Memez</p>
               <p class="tit">Clone coding</p>
@@ -511,7 +513,7 @@
               </span>
             </a>
           </li>
-          <li class="yellow" cursor-class="overlay">
+          <li class="yellow swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_medicalo.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Medical O</p>
               <p class="tit">Clone coding</p>
@@ -521,7 +523,7 @@
               </span>
             </a>
           </li>
-          <li class="green" cursor-class="overlay">
+          <li class="green swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_icheon.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Icheon</p>
               <p class="tit">Clone coding</p>
@@ -531,7 +533,7 @@
               </span>
             </a>
           </li>
-          <li class="white" cursor-class="overlay">
+          <li class="white swiper-slide" cursor-class="overlay">
             <a href="gallery/guide_crewalamode.html" onclick="window.open(this.href, '_blank','width=1420 height=1080'); return false;">
               <p class="title en">Crew a la mode</p>
               <p class="tit">Clone coding</p>
@@ -732,124 +734,147 @@
     </footer>
     <!-- 컨택영역끝(푸터) -->
   </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
   <script>
     gsap.registerPlugin(ScrollTrigger); //스크롤트리거 안정화
 
-    // 코딩리스트영역 x축 horizontalscroll
-    let list = gsap.utils.toArray(".code_list li");
-    let listA = gsap.utils.toArray(".code_list .green");
-    let listB = gsap.utils.toArray(".code_list .yellow");
-    let listC = gsap.utils.toArray(".code_list .white");
 
-    let scrollTween = gsap.to(list, {
-      xPercent: -100 * (list.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".contents_codelist",
-        pin: true,
-        scrub: 1,
-        end: "+=2500",
+    
+    $(window).resize(function(){ 
+      // 모바일모드시 코드리스트영역 swiper
+      if(window.innerWidth <= 500){
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1.6,
+          centeredSlides: true, 
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: { //자동슬라이드 (false-비활성화)
+          delay: 1800 // 시간 설정
+          }
+        });
       }
-    });
-    gsap.to(listA, {
-      y: 50,
-      rotation: 5,
-      scrollTrigger: {
-      trigger: ".contents_codelist",
-        pin: true,
-        scrub: 1,
-        end: "+=2500"
-      }
-    });
-    gsap.to(listB, {
-      y: -80,
-      rotation: 10,
-      scrollTrigger: {
-      trigger: ".contents_codelist",
-        pin: true,
-        scrub: 1,
-        end: "+=2500"
-      }
-    });
-    gsap.to(listC, {
-      rotation: -5,
-      scrollTrigger: {
-      trigger: ".contents_codelist",
-        pin: true,
-        scrub: 1,
-        end: "+=2500"
-      }
-    });
 
-    // 취미영역의 배경svg애니메이션
-    let bgLingA = gsap.utils.toArray(".ring_bg img.a");
-    let bgLingB = gsap.utils.toArray(".ring_bg img.b");
-    let bgLingC = gsap.utils.toArray(".ring_bg img.c");
+      if (window.innerWidth > 500){
+        // 코딩리스트영역 x축 horizontalscroll
+        let list = gsap.utils.toArray(".code_list li");
+        let listA = gsap.utils.toArray(".code_list .green");
+        let listB = gsap.utils.toArray(".code_list .yellow");
+        let listC = gsap.utils.toArray(".code_list .white");
+    
+        let scrollTween = gsap.to(list, {
+          xPercent: -100 * (list.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".contents_codelist",
+            pin: true,
+            scrub: 1,
+            end: "+=2500",
+          }
+        });
+        gsap.to(listA, {
+          y: 50,
+          rotation: 5,
+          scrollTrigger: {
+          trigger: ".contents_codelist",
+            pin: true,
+            scrub: 1,
+            end: "+=2500"
+          }
+        });
+        gsap.to(listB, {
+          y: -80,
+          rotation: 10,
+          scrollTrigger: {
+          trigger: ".contents_codelist",
+            pin: true,
+            scrub: 1,
+            end: "+=2500"
+          }
+        });
+        gsap.to(listC, {
+          rotation: -5,
+          scrollTrigger: {
+          trigger: ".contents_codelist",
+            pin: true,
+            scrub: 1,
+            end: "+=2500"
+          }
+        });
 
-    gsap.to(bgLingA, {
-      y: -100,
-      rotation: 30,
-      scrollTrigger: {
-      trigger: ".ring_bg",
-        pin: true,
-        scrub: 1,
-        end: "+=4000"
-      }
-    });
-    gsap.to(bgLingB, {
-      // y: -80,
-      rotation: 30,
-      scrollTrigger: {
-      trigger: ".ring_bg",
-        pin: true,
-        scrub: 1,
-        end: "+=4000"
-      }
-    });
-    gsap.to(bgLingC, {
-      rotation: -30,
-      scrollTrigger: {
-      trigger: ".ring_bg",
-        pin: true,
-        scrub: 1,
-        end: "+=4000"
-      }
-    });
+        // 취미영역의 배경svg애니메이션
+        let bgLingA = gsap.utils.toArray(".ring_bg img.a");
+        let bgLingB = gsap.utils.toArray(".ring_bg img.b");
+        let bgLingC = gsap.utils.toArray(".ring_bg img.c");
 
-    // 취미영역의 취미항목떠오르는애니메이션
-    let art = gsap.utils.toArray(".big_text p.art");
-    let bowling = gsap.utils.toArray(".big_text p.bowling");
-    let golf = gsap.utils.toArray(".big_text p.golf");
+        gsap.to(bgLingA, {
+          y: -100,
+          rotation: 30,
+          scrollTrigger: {
+          trigger: ".ring_bg",
+            pin: true,
+            scrub: 1,
+            end: "+=4000"
+          }
+        });
+        gsap.to(bgLingB, {
+          // y: -80,
+          rotation: 30,
+          scrollTrigger: {
+          trigger: ".ring_bg",
+            pin: true,
+            scrub: 1,
+            end: "+=4000"
+          }
+        });
+        gsap.to(bgLingC, {
+          rotation: -30,
+          scrollTrigger: {
+          trigger: ".ring_bg",
+            pin: true,
+            scrub: 1,
+            end: "+=4000"
+          }
+        });
 
-    gsap.to(art, {
-      rotation: -40,
-      scrollTrigger: {
-        trigger: ".big_text p.art",
-        // pin: true,
-        scrub: 1,
-        end: "+=4000"
-      }
-    });
-    gsap.to(bowling, {
-      rotate: 20,
-      rotation: 55,
-      scrollTrigger: {
-      trigger: ".big_text p.bowling",
-        // pin: true,
-        scrub: 1,
-        end: "+=4000",
-        toggleClass: {targets: '.hobbyWrap .hobby_Box img.b_1', className: "on"}
-      }
-    });
-    gsap.to(golf, {
-      rotation: -60,
-      scrollTrigger: {
-      trigger: ".big_text p.golf",
-        // pin: true,
-        scrub: 1,
-        end: "+=4000",
-        toggleClass: {targets: '.hobbyWrap .hobby_Box img.g_1', className: "on"}
+        // 취미영역의 취미항목떠오르는애니메이션
+        let art = gsap.utils.toArray(".big_text p.art");
+        let bowling = gsap.utils.toArray(".big_text p.bowling");
+        let golf = gsap.utils.toArray(".big_text p.golf");
+    
+        gsap.to(art, {
+          rotation: -40,
+          scrollTrigger: {
+            trigger: ".big_text p.art",
+            // pin: true,
+            scrub: 1,
+            end: "+=4000"
+          }
+        });
+        gsap.to(bowling, {
+          rotate: 20,
+          rotation: 55,
+          scrollTrigger: {
+          trigger: ".big_text p.bowling",
+            // pin: true,
+            scrub: 1,
+            end: "+=4000",
+            toggleClass: {targets: '.hobbyWrap .hobby_Box img.b_1', className: "on"}
+          }
+        });
+        gsap.to(golf, {
+          rotation: -60,
+          scrollTrigger: {
+          trigger: ".big_text p.golf",
+            // pin: true,
+            scrub: 1,
+            end: "+=4000",
+            toggleClass: {targets: '.hobbyWrap .hobby_Box img.g_1', className: "on"}
+          }
+        });
       }
     });
 
