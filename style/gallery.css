@@ -1246,24 +1246,22 @@ footer.contact_wrap{
     width: 90%; padding: 100px 0; display: block;
   }
   .contents_codelist .code_list ul li.imgBox{
-    width: 85%;
-    position: absolute; top: 200px; right: -28%;
+    width: 100%;
+    position: absolute; top: 270px; right: 0;
     z-index: -1;
-  }
-  .contents_codelist .code_list ul li.imgBox img{
-    opacity: 0.6; 
   }
   .contents_codelist .code_list ul li.imgBox img:hover{
     filter: grayscale(100%);
   }
   .contents_codelist .code_list.green ul li.imgBox{
-    top: 200px; left: -28%; z-index: 0;
+    top: 270px; left: 0; z-index: 0;
   }
   .contents_codelist .code_list ul li{
     width: 100%; z-index: 3;
   }
   .contents_codelist .code_list ul li .num{
     font-size: 5.5rem;
+    margin-bottom: 240px;
   }
   .contents_codelist .code_list ul li .category{
     font-size: 1.8rem;
