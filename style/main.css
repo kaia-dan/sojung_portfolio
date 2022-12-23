@@ -1935,6 +1935,7 @@ footer.contact_wrap{
   }
   /* 아트워크영역 */
   section.contents_artwork{
+    height: 850px;
     flex-direction: column;
     margin-top: 0; position: relative;
   }
