@@ -1907,10 +1907,10 @@ footer.contact_wrap{
   }
   /* ncs영역 */
   section.contents_ncs{
-    height: 850px;
+    height: unset;
     margin-top: 0; position: relative;
     flex-wrap: wrap;
-    padding: 0 5%;
+    padding: 95px 5%;
     align-content: center;
   }
   .ncs_title{
@@ -1958,19 +1958,19 @@ footer.contact_wrap{
   }
   /* 기록영역 */
   section.contents_record{
-    height: 850px;
+    height: unset;
+    padding: 95px 5%;
     margin-top: 0; position: relative;
   }
   .record_bg{
     font-size: 7.4vw;
-    height: unset;
-    /* display: none; */
+    display: none;
   }
   .record_list{
-    /* width: 100%; */
+    width: 100%;
     align-content: center;
   }
-  .record_list li:nth-child(n + 6){
+  .record_list li:nth-child(n + 7){
     display: none;
   }
   .record_list li a{
