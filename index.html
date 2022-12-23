@@ -741,6 +741,40 @@
   <script>
     gsap.registerPlugin(ScrollTrigger); //스크롤트리거 안정화
 
+    // 취미영역의 배경svg애니메이션
+    let bgLingA = gsap.utils.toArray(".ring_bg img.a");
+    let bgLingB = gsap.utils.toArray(".ring_bg img.b");
+    let bgLingC = gsap.utils.toArray(".ring_bg img.c");
+
+    gsap.to(bgLingA, {
+      y: -100,
+      rotation: 30,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingB, {
+      // y: -80,
+      rotation: 30,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingC, {
+      rotation: -30,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
 
     
     $(window).resize(function(){ 
@@ -762,7 +796,7 @@
           clickable: true,
           }
         });
-      }
+      };
 
       if (window.innerWidth > 500){
         // 코딩리스트영역 x축 horizontalscroll
@@ -811,41 +845,7 @@
           }
         });
 
-        // 취미영역의 배경svg애니메이션
-        let bgLingA = gsap.utils.toArray(".ring_bg img.a");
-        let bgLingB = gsap.utils.toArray(".ring_bg img.b");
-        let bgLingC = gsap.utils.toArray(".ring_bg img.c");
-
-        gsap.to(bgLingA, {
-          y: -100,
-          rotation: 30,
-          scrollTrigger: {
-          trigger: ".ring_bg",
-            pin: true,
-            scrub: 1,
-            end: "+=4000"
-          }
-        });
-        gsap.to(bgLingB, {
-          // y: -80,
-          rotation: 30,
-          scrollTrigger: {
-          trigger: ".ring_bg",
-            pin: true,
-            scrub: 1,
-            end: "+=4000"
-          }
-        });
-        gsap.to(bgLingC, {
-          rotation: -30,
-          scrollTrigger: {
-          trigger: ".ring_bg",
-            pin: true,
-            scrub: 1,
-            end: "+=4000"
-          }
-        });
-
+        
         // 취미영역의 취미항목떠오르는애니메이션
         let art = gsap.utils.toArray(".big_text p.art");
         let bowling = gsap.utils.toArray(".big_text p.bowling");
@@ -881,7 +881,7 @@
             toggleClass: {targets: '.hobbyWrap .hobby_Box img.g_1', className: "on"}
           }
         });
-      }
+      };
     }).resize(); 
 
   </script>
