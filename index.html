@@ -844,8 +844,9 @@
             end: "+=2500"
           }
         });
+      };
 
-        
+      if (window.innerWidth > 500){
         // 취미영역의 취미항목떠오르는애니메이션
         let art = gsap.utils.toArray(".big_text p.art");
         let bowling = gsap.utils.toArray(".big_text p.bowling");
