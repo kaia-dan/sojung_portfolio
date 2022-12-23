@@ -1247,21 +1247,21 @@ footer.contact_wrap{
   }
   .contents_codelist .code_list ul li.imgBox{
     width: 100%;
-    position: absolute; top: 270px; right: 0;
+    position: absolute; top: 290px; right: 0;
     z-index: -1;
   }
   .contents_codelist .code_list ul li.imgBox img:hover{
     filter: grayscale(100%);
   }
   .contents_codelist .code_list.green ul li.imgBox{
-    top: 270px; left: 0; z-index: 0;
+    top: 290px; left: 0; z-index: 0;
   }
   .contents_codelist .code_list ul li{
     width: 100%; z-index: 3;
   }
   .contents_codelist .code_list ul li .num{
     font-size: 5.5rem;
-    margin-bottom: 240px;
+    margin-bottom: 280px;
   }
   .contents_codelist .code_list ul li .category{
     font-size: 1.8rem;
