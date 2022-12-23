@@ -1974,24 +1974,24 @@ footer.contact_wrap{
   .hobbyWrap{
     height: 100%;
   }
-  .hobbyWrap .hobby_Box img{
-    opacity: 1;
-    top: 20vh;
-  }
   .big_text p{
     font-size: 24.4vw;
   }
   .big_text p.art{
-    top: 54vh;
+    top: 55vh;
     transform: none;
   }
   .big_text p.bowling{
-    top: 146vh;
+    top: 135vh;
     transform: none;
   }
   .big_text p.golf{
-    top: 225vh;
+    top: 215vh;
     transform: none;
+  }
+  .hobbyWrap .hobby_Box img{
+    opacity: 1;
+    top: 20vh;
   }
   .hobbyWrap .hobby_Box img:nth-child(2){
     top: 100vh;
