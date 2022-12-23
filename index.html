@@ -738,7 +738,7 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <script defer>
+  <script>
     gsap.registerPlugin(ScrollTrigger); //스크롤트리거 안정화
 
     // 취미영역의 배경svg애니메이션
@@ -846,7 +846,7 @@
         });
       };
 
-      if (window.innerWidth > 500){
+      // if (window.innerWidth > 500){
         // 취미영역의 취미항목떠오르는애니메이션
         let art = gsap.utils.toArray(".big_text p.art");
         let bowling = gsap.utils.toArray(".big_text p.bowling");
@@ -882,7 +882,7 @@
             toggleClass: {targets: '.hobbyWrap .hobby_Box img.g_1', className: "on"}
           }
         });
-      };
+      // };
     }).resize(); 
 
   </script>
