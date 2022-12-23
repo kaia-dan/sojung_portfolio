@@ -1542,7 +1542,7 @@ footer.contact_wrap{
     height: 110px; top: -237px;
   }
   .contents_timeline .end .end_txt{
-    margin-bottom: 250px;
+    margin-bottom: 175px;
   }
   .contents_timeline .timeline_list li.on .cover .t_tit::before{
     width: 22px; height: 22px;
@@ -1558,13 +1558,13 @@ footer.contact_wrap{
   }
   .hobbyBox .right_sec .hobby_list li .hobby_name{
     font-size: 3rem;
+    color: #FF4A1C;
   }
   .hobbyBox .right_sec .hobby_list li .hobby_name::before{
-    width: 25px; height: 25px;
-    left: -32px;
-    background: #FF4A1C;
+    display: none;
   }
   .hobbyBox .right_sec .hobby_list li::before{
+    width: 90%;
     height: 100%; left: -103%; top: 0;
   }
   /* 대외활동영역 */
