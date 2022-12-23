@@ -1928,7 +1928,7 @@ footer.contact_wrap{
     width: 100%;
   }
   .ncs_list li{
-    width: 49%;
+    width: 100%;
   }
   .ncs_list li:first-child{
     margin-top: 0;
