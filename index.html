@@ -35,7 +35,7 @@
   <link rel='stylesheet' href='https://use.typekit.net/kfu3rpe.css'>
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-  
+
   <title>소정의 포트폴리오 입니다 :)</title>
 </head>
 <body>
@@ -544,6 +544,7 @@
             </a>
           </li>
         </ul>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- 코딩리스트영역끝 -->
@@ -753,7 +754,12 @@
           loop: true,
           loopFillGroupWithBlank: true,
           autoplay: { //자동슬라이드 (false-비활성화)
-          delay: 1800 // 시간 설정
+          delay: 1800, // 시간 설정
+          disableOnInteraction: false, 
+          },
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
           }
         });
       }
