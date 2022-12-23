@@ -1894,6 +1894,17 @@ footer.contact_wrap{
     width: 200px;
     height: 45vh;
   }
+  /* swiper */
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -35px !important;
+  }
+  .swiper-pagination-bullet{
+    background: #efff3db0 !important;
+  }
+  .swiper-pagination-bullet-active{
+    background: #F0FF3D !important;
+    border: 1px solid #F0FF3D !important;
+  }
   /* ncs영역 */
   section.contents_ncs{
     margin-top: 0; position: relative;
