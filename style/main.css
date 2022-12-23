@@ -1967,12 +1967,13 @@ footer.contact_wrap{
     width: 100%;
     align-content: flex-end;
   }
-  .record_list li:nth-child(n + 5){
+  .record_list li:nth-child(n + 6){
     display: none;
   }
   .record_list li a{
     background: none;
     border: 1px solid #003D31;
+    padding: 30px 20px;
   }
   /* 취미영역 */
   section.contents_hobby{
