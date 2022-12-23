@@ -14,6 +14,9 @@
   src: url('../fonts/Orbikular-Bold.ttf');
 }
 /* 기본설정 */
+.swiper{
+  overflow: visible !important;
+}
 html {
   font-size: 62.5%;
 }
@@ -1848,11 +1851,11 @@ footer.contact_wrap{
     margin-top: 0;
   }
   .slideWrap{
-    height: 250px; top: 50%; transform: translateY(-50%);
+    height: 170px; top: 50%; transform: translateY(-50%);
   }
   .keyword_slide{
-    width: 3960px;
-    font-size: 5rem;
+    width: 2750px;
+    font-size: 3rem;
   }
   .keyword_slide li{
     background: #F0FF3D; border-radius: 50px;
@@ -1862,7 +1865,8 @@ footer.contact_wrap{
     background: #035343;
   }
   .keyword_slide.kr{
-    width: 2815px;
+    width: 2305px;
+    top: 100px;
   }
   /* 스킬영역 */
   section.contents_skills{
@@ -1883,13 +1887,23 @@ footer.contact_wrap{
   section.contents_codelist{
     margin-top: 0; position: relative;
   }
+  .code_list li:first-child{
+    margin: 0;
+  }
   .code_list li{
-    height: 53vh;
+    width: 200px;
+    height: 45vh;
   }
   /* ncs영역 */
   section.contents_ncs{
     margin-top: 0; position: relative;
-    padding: 0 5%;
+    padding: 0 10%;
+  }
+  .ncs_title{
+    display: none;
+  }
+  .ncs_list{
+    width: 100%;
   }
   /* 아트워크영역 */
   section.contents_artwork{
@@ -1924,9 +1938,12 @@ footer.contact_wrap{
   /* 취미영역 */
   section.contents_hobby{
     margin-top: 0; position: relative;
+    height: 270vh;
   }
   .hobbyWrap .hobby_Box{
     width: 80%;
+
+    height: 100%;
   }
   .hobbyWrap .hobby_Box
   .big_text p{
@@ -1940,6 +1957,36 @@ footer.contact_wrap{
   }
   .big_text p.golf{
     left: 5%;
+  }
+
+
+  .hobbyWrap{
+    height: 100%;
+  }
+  .hobbyWrap .hobby_Box img{
+    opacity: 1;
+    top: 20vh;
+  }
+  .big_text p{
+    font-size: 24.4vw;
+  }
+  .big_text p.art{
+    top: 54vh;
+    transform: none;
+  }
+  .big_text p.bowling{
+    top: 146vh;
+    transform: none;
+  }
+  .big_text p.golf{
+    top: 225vh;
+    transform: none;
+  }
+  .hobbyWrap .hobby_Box img:nth-child(2){
+    top: 100vh;
+  }
+  .hobbyWrap .hobby_Box img:nth-child(3){
+    top: 180vh;
   }
   /* 감사인사영역 */
   section.thanks_sec{
