@@ -417,7 +417,7 @@ $(document).ready(function(){
     verticalSwiping: true,
     responsive: [
       {
-        breakpoint: 500,
+        breakpoint: 501,
         settings: 'unslick'
       }
     ]
