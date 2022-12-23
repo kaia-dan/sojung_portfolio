@@ -11,8 +11,6 @@ var fixedNum_thanks = $("section.thanks_sec").offset().top;
 var fixedNum_contact = $("footer.contact_wrap").offset().top;
 
 
-// console.log(fixedNum_ncs);
-
 /* 반응형을 위한 윈도우사이즈 불러오기 */
 $(window).resize(function(){ 
 
@@ -304,6 +302,13 @@ $(window).resize(function(){
       }else if(scrollTop < fixedNum_hobby){
         $("section.contents_hobby .hobbyWrap").removeClass("on");
       };
+
+      /* ====반응형==== */
+      // 모바일 500
+      if (window.innerWidth <= 500){
+        $("section.contents_hobby .hobbyWrap").removeClass("on");
+
+      };
     };
 
     // 감사영역
@@ -397,6 +402,7 @@ function illChangeImage(){
 };
 setInterval(illChangeImage, 1200);
 
+// 코딩리스트영역슬릭
 // ncs영역슬릭
 $(document).ready(function(){
   $(".ncs_list").slick({
@@ -480,7 +486,7 @@ class Scrooth {
 
 const scroll = new Scrooth({
   element: window,
-  strength: 18,
+  strength: 21, // 스크롤 한번 할때 내려가는 길이(=속도)조절
   acceleration: 1.5,
   deceleration: 0.975,
 });
