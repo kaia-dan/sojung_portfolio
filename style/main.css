@@ -1907,6 +1907,7 @@ footer.contact_wrap{
   }
   /* ncs영역 */
   section.contents_ncs{
+    height: 850px;
     margin-top: 0; position: relative;
     flex-wrap: wrap;
     padding: 0 5%;
@@ -1957,15 +1958,16 @@ footer.contact_wrap{
   }
   /* 기록영역 */
   section.contents_record{
+    height: 800px;
     margin-top: 0; position: relative;
   }
   .record_bg{
     font-size: 7.4vw;
-    display: none;
+    /* display: none; */
   }
   .record_list{
-    width: 100%;
-    align-content: flex-end;
+    /* width: 100%; */
+    align-content: center;
   }
   .record_list li:nth-child(n + 6){
     display: none;
