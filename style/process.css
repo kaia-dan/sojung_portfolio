@@ -1166,6 +1166,9 @@ footer.contact_wrap{
     width: 48%; margin-bottom: 30px;
     padding: 0;
   }
+  .contents_styleguide .inner .list li span b{
+    display: none;
+  }
   .contents_styleguide .inner .color_list{
     margin-bottom: 130px;
   }
