@@ -1050,11 +1050,11 @@ section.contents_hobby{
 .ring_bg img:nth-child(3){
   left: 30%; transform: rotate(-30deg); top: 10px;
 }
-.hobbyWrap{
+section.contents_hobby .hobbyWrap{
   width: 100%; height: 100vh;
   position: absolute; top: 0;
 }
-.hobbyWrap .hobby_Box{
+section.contents_hobby .hobbyWrap .hobby_Box{
   width: 400px; height: 400px;
   position: absolute; left: 50%; top: 50%;
   transform: translate(-50%, -50%);
@@ -1065,7 +1065,7 @@ section.contents_hobby{
 section.contents_hobby .hobbyWrap.on{
   position: fixed;
 }
-.hobbyWrap .hobby_Box img{
+section.contents_hobby .hobbyWrap .hobby_Box img{
   width: 100%;
   transition: all 0.3s;
   filter: grayscale(100%);
@@ -1074,11 +1074,11 @@ section.contents_hobby .hobbyWrap.on{
   opacity: 0; 
   transition: opacity 0.3s;
 }
-.hobbyWrap .hobby_Box img.on{
+section.contents_hobby .hobbyWrap .hobby_Box img.on{
   opacity: 1;
   z-index: 99;
 }
-.hobbyWrap .hobby_Box img:hover{
+section.contents_hobby .hobbyWrap .hobby_Box img:hover{
   transition: opacity 0.3s;
   filter: grayscale(0%);
 }
@@ -1997,17 +1997,17 @@ footer.contact_wrap{
     height: 270vh;
     /* height: 2100px; */
   }
-  .hobbyWrap .hobby_Box{
+  section.contents_hobby .hobbyWrap .hobby_Box{
     width: 80%;
 
     height: 100%;
   }
-  .hobbyWrap .hobby_Box
+  section.contents_hobby .hobbyWrap .hobby_Box
   .big_text p{
     font-size: 25vw;
   }
 
-  .hobbyWrap{
+  section.contents_hobby .hobbyWrap{
     height: 100%;
   }
   .big_text p.art{
@@ -2031,16 +2031,16 @@ footer.contact_wrap{
     /* top: 1880px; */
     transform: none;
   }
-  .hobbyWrap .hobby_Box img{
+  section.contents_hobby .hobbyWrap .hobby_Box img{
     opacity: 1;
     /* top: 200px; */
     top: 20vh;
   }
-  .hobbyWrap .hobby_Box img:nth-child(2){
+  section.contents_hobby .hobbyWrap .hobby_Box img:nth-child(2){
     /* top: 900px; */
     top: 100vh;
   }
-  .hobbyWrap .hobby_Box img:nth-child(3){
+  section.contents_hobby .hobbyWrap .hobby_Box img:nth-child(3){
     /* top: 1600px; */
     top: 180vh;
   }
@@ -2048,15 +2048,17 @@ footer.contact_wrap{
   section.thanks_sec{
     height: 50vh;
     /* height: 600px; */
-    margin-top: 1350vh; position: relative;
+    /* margin-top: 1250px;  */
+    margin-top: 0;
+    position: relative;
   }
   .thanks{
     font-size: 8.2vw;
   }
   /* 푸터영역 */
   footer.contact_wrap{
-    /* height: 900px; */
-    margin-top: 1421vh; position: relative;
+    margin-top: 0; 
+    position: relative;
   }
   .footer_bottom{
     height: 90px;
@@ -2065,7 +2067,7 @@ footer.contact_wrap{
     width: 200px;
   }
   .footer_bottom .list li{
-    font-size: 1.3rem;
+    font-size: 0.3rem;
   }
   .footer_bottom .list li:first-child{
     opacity: 0;
