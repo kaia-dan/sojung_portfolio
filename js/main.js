@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger); //스크롤트리거 안정화
+
 // 외부변수선언
 var fixedNum_info = $("section.contents_introduce").offset().top;
 var fixedNum_keyword = $("section.contents_keyword").offset().top;
@@ -11,8 +13,164 @@ var fixedNum_thanks = $("section.thanks_sec").offset().top;
 var fixedNum_contact = $("footer.contact_wrap").offset().top;
 
 
+
 /* 반응형을 위한 윈도우사이즈 불러오기 */
 $(window).resize(function(){ 
+
+
+  // $(window).resize(function(){ 
+    // 모바일모드시 코드리스트영역 swiper
+  if(window.innerWidth <= 500){
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1.6,
+      centeredSlides: true, 
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: { //자동슬라이드 (false-비활성화)
+      delay: 1800, // 시간 설정
+      disableOnInteraction: false, 
+      },
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      }
+    });
+  };
+
+  if (window.innerWidth > 500){
+    // 코딩리스트영역 x축 horizontalscroll
+    let list = gsap.utils.toArray(".code_list li");
+    let listA = gsap.utils.toArray(".code_list .green");
+    let listB = gsap.utils.toArray(".code_list .yellow");
+    let listC = gsap.utils.toArray(".code_list .white");
+
+    let scrollTween = gsap.to(list, {
+      xPercent: -100 * (list.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".contents_codelist",
+        pin: true,
+        scrub: 1,
+        end: "+=2500",
+      }
+    });
+    gsap.to(listA, {
+      y: 50,
+      rotation: 5,
+      scrollTrigger: {
+      trigger: ".contents_codelist",
+        pin: true,
+        scrub: 1,
+        end: "+=2500"
+      }
+    });
+    gsap.to(listB, {
+      y: -80,
+      rotation: 10,
+      scrollTrigger: {
+      trigger: ".contents_codelist",
+        pin: true,
+        scrub: 1,
+        end: "+=2500"
+      }
+    });
+    gsap.to(listC, {
+      rotation: -5,
+      scrollTrigger: {
+      trigger: ".contents_codelist",
+        pin: true,
+        scrub: 1,
+        end: "+=2500"
+      }
+    });
+  };
+// }).resize(); 
+
+
+  // 취미영역의 배경svg애니메이션
+  let bgLingA = gsap.utils.toArray(".ring_bg img.a");
+  let bgLingB = gsap.utils.toArray(".ring_bg img.b");
+  let bgLingC = gsap.utils.toArray(".ring_bg img.c");
+
+  gsap.to(bgLingA, {
+    y: -100,
+    rotation: 30,
+    scrollTrigger: {
+    trigger: ".ring_bg",
+      pin: true,
+      scrub: 1,
+      end: "+=4000"
+    }
+  });
+  gsap.to(bgLingB, {
+    // y: -80,
+    rotation: 30,
+    scrollTrigger: {
+    trigger: ".ring_bg",
+      pin: true,
+      scrub: 1,
+      end: "+=4000"
+    }
+  });
+  gsap.to(bgLingC, {
+    rotation: -30,
+    scrollTrigger: {
+    trigger: ".ring_bg",
+      pin: true,
+      scrub: 1,
+      end: "+=4000"
+    }
+  });
+
+
+// if (window.innerWidth > 500){
+  // 취미영역의 취미항목떠오르는애니메이션
+  let art = gsap.utils.toArray(".big_text p.art");
+  let bowling = gsap.utils.toArray(".big_text p.bowling");
+  let golf = gsap.utils.toArray(".big_text p.golf");
+
+  gsap.to(art, {
+    rotation: -40,
+    scrollTrigger: {
+      trigger: ".big_text p.art",
+      // pin: true,
+      scrub: 1,
+      end: "+=4000"
+    }
+  });
+  gsap.to(bowling, {
+    rotate: 20,
+    rotation: 55,
+    scrollTrigger: {
+    trigger: ".big_text p.bowling",
+      // pin: true,
+      scrub: 1,
+      end: "+=4000",
+      toggleClass: {targets: '.hobbyWrap .hobby_Box img.b_1', className: "on"}
+    }
+  });
+  gsap.to(golf, {
+    rotation: -60,
+    scrollTrigger: {
+    trigger: ".big_text p.golf",
+      // pin: true,
+      scrub: 1,
+      end: "+=4000",
+      toggleClass: {targets: '.hobbyWrap .hobby_Box img.g_1', className: "on"}
+    }
+  });
+
+
+
+
+
+
+
+
+
+
 
   /* ====스크롤값을 불러오는 함수 시작==== */
   $(document).on("scroll resize", function(){
@@ -423,6 +581,15 @@ $(document).ready(function(){
     ]
   });
 });
+
+
+
+
+
+
+
+
+
 
 // 기록영역슬릭
 /* $(function() {
