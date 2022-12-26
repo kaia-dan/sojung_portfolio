@@ -85,44 +85,45 @@ $(window).resize(function(){
         end: "+=2500"
       }
     });
+    
+    // 취미영역의 배경svg애니메이션
+    let bgLingA = gsap.utils.toArray(".ring_bg img.a");
+    let bgLingB = gsap.utils.toArray(".ring_bg img.b");
+    let bgLingC = gsap.utils.toArray(".ring_bg img.c");
+    
+    gsap.to(bgLingA, {
+      y: -100,
+      rotation: 30,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingB, {
+      // y: -80,
+      rotation: 30,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
+    gsap.to(bgLingC, {
+      rotation: -30,
+      scrollTrigger: {
+      trigger: ".ring_bg",
+        pin: true,
+        scrub: 1,
+        end: "+=4000"
+      }
+    });
   };
 // }).resize(); 
 
 
-  // 취미영역의 배경svg애니메이션
-  let bgLingA = gsap.utils.toArray(".ring_bg img.a");
-  let bgLingB = gsap.utils.toArray(".ring_bg img.b");
-  let bgLingC = gsap.utils.toArray(".ring_bg img.c");
-
-  gsap.to(bgLingA, {
-    y: -100,
-    rotation: 30,
-    scrollTrigger: {
-    trigger: ".ring_bg",
-      pin: true,
-      scrub: 1,
-      end: "+=4000"
-    }
-  });
-  gsap.to(bgLingB, {
-    // y: -80,
-    rotation: 30,
-    scrollTrigger: {
-    trigger: ".ring_bg",
-      pin: true,
-      scrub: 1,
-      end: "+=4000"
-    }
-  });
-  gsap.to(bgLingC, {
-    rotation: -30,
-    scrollTrigger: {
-    trigger: ".ring_bg",
-      pin: true,
-      scrub: 1,
-      end: "+=4000"
-    }
-  });
 
 
 // if (window.innerWidth > 500){
