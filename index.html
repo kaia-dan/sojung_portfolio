@@ -797,8 +797,7 @@
           }
         });
       };
-      
-      
+
       if (window.innerWidth > 500){
         // 코딩리스트영역 x축 horizontalscroll
         let list = gsap.utils.toArray(".code_list li");
@@ -820,7 +819,7 @@
           y: 50,
           rotation: 5,
           scrollTrigger: {
-            trigger: ".contents_codelist",
+          trigger: ".contents_codelist",
             pin: true,
             scrub: 1,
             end: "+=2500"
@@ -830,7 +829,7 @@
           y: -80,
           rotation: 10,
           scrollTrigger: {
-            trigger: ".contents_codelist",
+          trigger: ".contents_codelist",
             pin: true,
             scrub: 1,
             end: "+=2500"
@@ -839,14 +838,13 @@
         gsap.to(listC, {
           rotation: -5,
           scrollTrigger: {
-            trigger: ".contents_codelist",
+          trigger: ".contents_codelist",
             pin: true,
             scrub: 1,
             end: "+=2500"
           }
         });
       };
-    }).resize(); 
 
       // if (window.innerWidth > 500){
         // 취미영역의 취미항목떠오르는애니메이션
@@ -885,6 +883,7 @@
           }
         });
       // };
+    }).resize(); 
 
   </script>
 </body>
