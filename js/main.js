@@ -307,6 +307,7 @@ $(window).resize(function(){
       // 모바일 500
       if (window.innerWidth <= 500){
         $("section.contents_hobby .hobbyWrap").removeClass("on");
+
       };
     };
 
