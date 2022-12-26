@@ -1761,6 +1761,10 @@ footer.contact_wrap{
   #cursor{
     display: none;
   }
+  /* .allWrap{
+    height: 12890px;
+    background: #f7f7f7;
+  } */
   /* 헤더영역 */
   .header_inner .logo a{
     width: 35px; height: 35px;
@@ -1791,6 +1795,7 @@ footer.contact_wrap{
   }
   /* 비쥬얼영역 */
   .visual_wrap{
+    /* height: 700px; */
     position: relative;
   }
   .visual_my.mo{
@@ -1799,6 +1804,7 @@ footer.contact_wrap{
   }
   /* 나를소개하는영역 */
   section.contents_introduce{
+    /* height: 2140px; */
     height: auto;
     margin-top: 0;
   }
@@ -1847,6 +1853,7 @@ footer.contact_wrap{
   /* 키워드영역 */
   section.contents_keyword{
     height: 100vh;
+    /* height: 800px; */
     position: relative;
     margin-top: 0;
   }
@@ -1870,6 +1877,7 @@ footer.contact_wrap{
   }
   /* 스킬영역 */
   section.contents_skills{
+    /* height: 800px; */
     margin-top: 0;
     position: relative;
   }
@@ -1885,6 +1893,7 @@ footer.contact_wrap{
   }
   /* 코딩리스트영역 */
   section.contents_codelist{
+    /* height: 800px; */
     margin-top: 0; position: relative;
   }
   .code_list li:first-child{
@@ -1908,6 +1917,7 @@ footer.contact_wrap{
   /* ncs영역 */
   section.contents_ncs{
     height: unset;
+    /* height: 2240px; */
     margin-top: 0; position: relative;
     flex-wrap: wrap;
     padding: 95px 5%;
@@ -1960,6 +1970,7 @@ footer.contact_wrap{
   /* 기록영역 */
   section.contents_record{
     height: unset;
+    /* height: 900px; */
     padding: 95px 5%;
     margin-top: 0; position: relative;
   }
@@ -1981,8 +1992,10 @@ footer.contact_wrap{
   }
   /* 취미영역 */
   section.contents_hobby{
-    margin-top: 0; position: relative;
+    margin-top: 0; 
+    position: relative;
     height: 270vh;
+    /* height: 2100px; */
   }
   .hobbyWrap .hobby_Box{
     width: 80%;
@@ -1993,56 +2006,57 @@ footer.contact_wrap{
   .big_text p{
     font-size: 25vw;
   }
-  .big_text p.art{
-    left: 5%;
-  }
-  .big_text p.bowling{
-    left: 3%;
-  }
-  .big_text p.golf{
-    left: 5%;
-  }
-
 
   .hobbyWrap{
     height: 100%;
   }
-  .big_text p{
-    font-size: 24.4vw;
-  }
   .big_text p.art{
+    left: 5%;
+
     top: 55vh;
+    /* top: 480px; */
     transform: none;
   }
   .big_text p.bowling{
+    left: 3%;
+
     top: 135vh;
+    /* top: 1180px; */
     transform: none;
   }
   .big_text p.golf{
+    left: 5%;
+
     top: 215vh;
+    /* top: 1880px; */
     transform: none;
   }
   .hobbyWrap .hobby_Box img{
     opacity: 1;
+    /* top: 200px; */
     top: 20vh;
   }
   .hobbyWrap .hobby_Box img:nth-child(2){
+    /* top: 900px; */
     top: 100vh;
   }
   .hobbyWrap .hobby_Box img:nth-child(3){
+    /* top: 1600px; */
     top: 180vh;
   }
   /* 감사인사영역 */
   section.thanks_sec{
     height: 50vh;
-    margin-top: 0; position: relative;
+    /* height: 600px; */
+    margin-top: 1350vh; position: relative;
   }
   .thanks{
     font-size: 8.2vw;
   }
   /* 푸터영역 */
   footer.contact_wrap{
-    margin-top: 0; position: relative;
+    /* height: 900px; */
+    margin-top: 1421vh; position: relative;
   }
   .footer_bottom{
     height: 90px;
