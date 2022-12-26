@@ -743,26 +743,26 @@
 
 
     
-    // $(window).resize(function(){ 
-    //   // 모바일모드시 코드리스트영역 swiper
-    //   if(window.innerWidth <= 500){
-    //     var swiper = new Swiper(".mySwiper", {
-    //       slidesPerView: 1.6,
-    //       centeredSlides: true, 
-    //       spaceBetween: 20,
-    //       slidesPerGroup: 1,
-    //       loop: true,
-    //       loopFillGroupWithBlank: true,
-    //       autoplay: { //자동슬라이드 (false-비활성화)
-    //       delay: 1800, // 시간 설정
-    //       disableOnInteraction: false, 
-    //       },
-    //       pagination: {
-    //       el: ".swiper-pagination",
-    //       clickable: true,
-    //       }
-    //     });
-    //   };
+    $(window).resize(function(){ 
+      // 모바일모드시 코드리스트영역 swiper
+      if(window.innerWidth <= 500){
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1.6,
+          centeredSlides: true, 
+          spaceBetween: 20,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: { //자동슬라이드 (false-비활성화)
+          delay: 1800, // 시간 설정
+          disableOnInteraction: false, 
+          },
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          }
+        });
+      };
 
     //   if (window.innerWidth > 500){
     //     // 코딩리스트영역 x축 horizontalscroll
@@ -811,7 +811,7 @@
     //       }
     //     });
     //   };
-    // }).resize(); 
+    }).resize(); 
 
 
     //   // 취미영역의 배경svg애니메이션
