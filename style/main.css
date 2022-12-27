@@ -1762,7 +1762,7 @@ footer.contact_wrap{
     display: none;
   }
   .allWrap{
-    height: 12991px;
+    height: 12791px;
     background: #f7f7f7;
   }
   /* 헤더영역 */
@@ -1920,7 +1920,7 @@ footer.contact_wrap{
   /* ncs영역 */
   section.contents_ncs{
     /* height: unset; */
-    height: 2400px;
+    height: 2200px;
     margin-top: 0; position: relative;
     flex-wrap: wrap;
     padding: 95px 5%;
@@ -2069,7 +2069,7 @@ footer.contact_wrap{
     height: 90px;
   }
   .footer_bottom .sns{
-    width: 290px;
+    width: 380px;
   }
   .footer_bottom .list li:first-child{
     opacity: 0;
