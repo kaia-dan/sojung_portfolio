@@ -1835,6 +1835,9 @@ footer.contact_wrap{
   .intro_box .intro_right .sc.first_sc .tit{
     margin-bottom: 23px;
   }
+  .intro_box .intro_right .sc.first_sc .txt{
+    margin-bottom: 0;
+  }
   .second_wrap{
     position: relative;
     margin-top: 50px;
