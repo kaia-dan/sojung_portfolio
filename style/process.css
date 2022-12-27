@@ -43,7 +43,7 @@ body{
 /* 커서모양바꾸기 */
 #cursor {
   position: fixed;
-  z-index: 900;
+  z-index: 99999;
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
