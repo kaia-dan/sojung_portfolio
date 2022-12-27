@@ -1191,6 +1191,9 @@ footer.contact_wrap{
   .contents_responsive .display li img{
     display: none;
   }
+  .contents_responsive .display li video{
+    border-radius: 5px;
+  }
   
 
   /* 감사인사영역 */
