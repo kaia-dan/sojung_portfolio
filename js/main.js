@@ -307,7 +307,6 @@ $(window).resize(function(){
       // 모바일 500
       if (window.innerWidth <= 500){
         $("section.contents_hobby .hobbyWrap").removeClass("on");
-
       };
     };
 
@@ -333,6 +332,13 @@ $(window).resize(function(){
         // info텍스트변경
         $(".header_inner .logo .head_info").text("귀한 시간 내주셔서 감사합니다 :-)");
       };
+
+      /* ====반응형==== */
+      if (window.innerWidth <= 500 && scrollTop >= fixedNum_contact){
+        $("footer.contact_wrap").addClass("on");
+      }else{
+        $("footer.contact_wrap").removeClass("on");
+      }
     };
   });
 }).resize(); 
@@ -448,51 +454,51 @@ $(document).ready(function(){
 }); */
 
 // 마우스스크롤부드럽게
-// class Scrooth {
-//   constructor({element = window, strength=10, acceleration = 1.2,deceleration = 0.975}={}) {
-//     this.element = element;
-//     this.distance = strength;
-//     this.acceleration = acceleration;
-//     this.deceleration = deceleration;
-//     this.running = false;
+class Scrooth {
+  constructor({element = window, strength=10, acceleration = 1.2,deceleration = 0.975}={}) {
+    this.element = element;
+    this.distance = strength;
+    this.acceleration = acceleration;
+    this.deceleration = deceleration;
+    this.running = false;
 
-//     this.element.addEventListener('wheel', this.scrollHandler.bind(this), {passive: false});
-//     this.element.addEventListener('mousewheel', this.scrollHandler.bind(this), {passive: false});
-//     this.scroll = this.scroll.bind(this);
-//   }
+    this.element.addEventListener('wheel', this.scrollHandler.bind(this), {passive: false});
+    this.element.addEventListener('mousewheel', this.scrollHandler.bind(this), {passive: false});
+    this.scroll = this.scroll.bind(this);
+  }
 
-//   scrollHandler(e) {
-//     e.preventDefault();
+  scrollHandler(e) {
+    e.preventDefault();
 
-//     if (!this.running) {
-//       this.top = this.element.pageYOffset || this.element.scrollTop || 0;
-//       this.running = true;
-//       this.currentDistance = e.deltaY > 0 ? 0.1 : -0.1;
-//       this.isDistanceAsc = true;
-//       this.scroll();
-//     } else {
-//       this.isDistanceAsc = false;
-//       this.currentDistance = e.deltaY > 0 ? this.distance : -this.distance;
-//     }
-//   }
+    if (!this.running) {
+      this.top = this.element.pageYOffset || this.element.scrollTop || 0;
+      this.running = true;
+      this.currentDistance = e.deltaY > 0 ? 0.1 : -0.1;
+      this.isDistanceAsc = true;
+      this.scroll();
+    } else {
+      this.isDistanceAsc = false;
+      this.currentDistance = e.deltaY > 0 ? this.distance : -this.distance;
+    }
+  }
 
-//   scroll() {
-//     if (this.running) {
-//       this.currentDistance *= this.isDistanceAsc === true ? this.acceleration : this.deceleration;
-//       Math.abs(this.currentDistance) < 0.1 && this.isDistanceAsc === false ? this.running = false : 1;
-//       Math.abs(this.currentDistance) >= Math.abs(this.distance) ? this.isDistanceAsc = false : 1;
+  scroll() {
+    if (this.running) {
+      this.currentDistance *= this.isDistanceAsc === true ? this.acceleration : this.deceleration;
+      Math.abs(this.currentDistance) < 0.1 && this.isDistanceAsc === false ? this.running = false : 1;
+      Math.abs(this.currentDistance) >= Math.abs(this.distance) ? this.isDistanceAsc = false : 1;
 
-//       this.top += this.currentDistance;
-//       this.element.scrollTo(0, this.top);
+      this.top += this.currentDistance;
+      this.element.scrollTo(0, this.top);
       
-//       requestAnimationFrame(this.scroll);
-//     }
-//   }
-// }
+      requestAnimationFrame(this.scroll);
+    }
+  }
+}
 
-// const scroll = new Scrooth({
-//   element: window,
-//   strength: 21, // 스크롤 한번 할때 내려가는 길이(=속도)조절
-//   acceleration: 1.5,
-//   deceleration: 0.975,
-// });
+const scroll = new Scrooth({
+  element: window,
+  strength: 21, // 스크롤 한번 할때 내려가는 길이(=속도)조절
+  acceleration: 1.5,
+  deceleration: 0.975,
+});
