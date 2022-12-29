@@ -405,6 +405,12 @@ section.contents_artwork{
   line-height: 1.5;
   cursor: pointer;
   opacity: 0.5;
+  transition: all 0.3s;
+}
+/* hover */
+.art_title li:hover{
+  text-shadow: -1px 0px #00E38E, 0px 1px #00E38E, 1px 0px #00E38E, 0px -1px #00E38E;
+  color: #002921;
 }
 /* animation */
 .art_title li:nth-child(1).motion{
@@ -446,6 +452,8 @@ section.contents_artwork{
 .art_title li.on{
   opacity: 1;
   position: relative;
+  text-shadow: none;
+  color: #00E38E;
 }
 .art_title li.on::after{
   content: "";

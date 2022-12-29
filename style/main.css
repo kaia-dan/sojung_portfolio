@@ -888,7 +888,12 @@ section.contents_artwork.on{
   line-height: 1.5;
   position: relative;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: all 0.3s;
+}
+/* hover */
+.art_title li:hover{
+  text-shadow: -1px 0px #F0FF3D, 0px 1px #F0FF3D, 1px 0px #F0FF3D, 0px -1px #F0FF3D;
+  color: #002921;
 }
 /* animation */
 .art_title li:nth-child(1).motion{
@@ -931,6 +936,8 @@ section.contents_artwork.on{
 .art_title li.on{
   opacity: 1;
   position: relative;
+  text-shadow: none;
+  color: #F0FF3D;
 }
 .art_img li.on{
   opacity: 1;
@@ -2051,7 +2058,6 @@ footer.contact_wrap{
   section.thanks_sec{
     /* height: 50vh; */
     height: 600px;
-    /* margin-top: 1250px;  */
     margin-top: 0;
     position: relative;
   }
